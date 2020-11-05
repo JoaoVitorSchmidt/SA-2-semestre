@@ -37,23 +37,25 @@
             this.textBoxCPF = new System.Windows.Forms.TextBox();
             this.labelCPF = new System.Windows.Forms.Label();
             this.labelCNPJ = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxCNPJ = new System.Windows.Forms.TextBox();
             this.labelEndereco = new System.Windows.Forms.Label();
             this.labelCEP = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxCEP = new System.Windows.Forms.TextBox();
             this.labelRua = new System.Windows.Forms.Label();
             this.textBoxRua = new System.Windows.Forms.TextBox();
             this.labelNumero = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxNumero = new System.Windows.Forms.TextBox();
             this.labelComplemento = new System.Windows.Forms.Label();
             this.textBoxComplemento = new System.Windows.Forms.TextBox();
             this.labelBairro = new System.Windows.Forms.Label();
             this.textBoxBairro = new System.Windows.Forms.TextBox();
             this.labelCidade = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxCidade = new System.Windows.Forms.TextBox();
             this.labelUF = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxUF = new System.Windows.Forms.TextBox();
             this.buttonSalvarCadastro = new System.Windows.Forms.Button();
+            this.labelSenha2 = new System.Windows.Forms.Label();
+            this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelDadosPessoais
@@ -132,12 +134,12 @@
             this.labelCNPJ.TabIndex = 1;
             this.labelCNPJ.Text = "CNPJ";
             // 
-            // textBox1
+            // textBoxCNPJ
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 23);
-            this.textBox1.TabIndex = 2;
+            this.textBoxCNPJ.Location = new System.Drawing.Point(219, 125);
+            this.textBoxCNPJ.Name = "textBoxCNPJ";
+            this.textBoxCNPJ.Size = new System.Drawing.Size(194, 23);
+            this.textBoxCNPJ.TabIndex = 2;
             // 
             // labelEndereco
             // 
@@ -161,12 +163,12 @@
             this.labelCEP.TabIndex = 1;
             this.labelCEP.Text = "CEP";
             // 
-            // textBox2
+            // textBoxCEP
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 244);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(117, 23);
-            this.textBox2.TabIndex = 2;
+            this.textBoxCEP.Location = new System.Drawing.Point(23, 244);
+            this.textBoxCEP.Name = "textBoxCEP";
+            this.textBoxCEP.Size = new System.Drawing.Size(117, 23);
+            this.textBoxCEP.TabIndex = 2;
             // 
             // labelRua
             // 
@@ -197,12 +199,12 @@
             this.labelNumero.TabIndex = 1;
             this.labelNumero.Text = "Número";
             // 
-            // textBox3
+            // textBoxNumero
             // 
-            this.textBox3.Location = new System.Drawing.Point(371, 244);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(66, 23);
-            this.textBox3.TabIndex = 2;
+            this.textBoxNumero.Location = new System.Drawing.Point(371, 244);
+            this.textBoxNumero.Name = "textBoxNumero";
+            this.textBoxNumero.Size = new System.Drawing.Size(66, 23);
+            this.textBoxNumero.TabIndex = 2;
             // 
             // labelComplemento
             // 
@@ -251,12 +253,12 @@
             this.labelCidade.TabIndex = 1;
             this.labelCidade.Text = "Cidade";
             // 
-            // textBox5
+            // textBoxCidade
             // 
-            this.textBox5.Location = new System.Drawing.Point(24, 368);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(197, 23);
-            this.textBox5.TabIndex = 2;
+            this.textBoxCidade.Location = new System.Drawing.Point(24, 368);
+            this.textBoxCidade.Name = "textBoxCidade";
+            this.textBoxCidade.Size = new System.Drawing.Size(197, 23);
+            this.textBoxCidade.TabIndex = 2;
             // 
             // labelUF
             // 
@@ -269,12 +271,12 @@
             this.labelUF.TabIndex = 1;
             this.labelUF.Text = "UF";
             // 
-            // textBox4
+            // textBoxUF
             // 
-            this.textBox4.Location = new System.Drawing.Point(262, 368);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(117, 23);
-            this.textBox4.TabIndex = 2;
+            this.textBoxUF.Location = new System.Drawing.Point(262, 368);
+            this.textBoxUF.Name = "textBoxUF";
+            this.textBoxUF.Size = new System.Drawing.Size(117, 23);
+            this.textBoxUF.TabIndex = 2;
             // 
             // buttonSalvarCadastro
             // 
@@ -283,11 +285,29 @@
             this.buttonSalvarCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(31)))), ((int)(((byte)(12)))));
-            this.buttonSalvarCadastro.Location = new System.Drawing.Point(505, 141);
+            this.buttonSalvarCadastro.Location = new System.Drawing.Point(508, 222);
             this.buttonSalvarCadastro.Name = "buttonSalvarCadastro";
             this.buttonSalvarCadastro.Size = new System.Drawing.Size(121, 115);
             this.buttonSalvarCadastro.TabIndex = 3;
             this.buttonSalvarCadastro.UseVisualStyleBackColor = false;
+            // 
+            // labelSenha2
+            // 
+            this.labelSenha2.AutoSize = true;
+            this.labelSenha2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSenha2.ForeColor = System.Drawing.Color.White;
+            this.labelSenha2.Location = new System.Drawing.Point(461, 84);
+            this.labelSenha2.Name = "labelSenha2";
+            this.labelSenha2.Size = new System.Drawing.Size(45, 18);
+            this.labelSenha2.TabIndex = 1;
+            this.labelSenha2.Text = "Senha";
+            // 
+            // textBoxSenha2
+            // 
+            this.textBoxSenha2.Location = new System.Drawing.Point(461, 106);
+            this.textBoxSenha2.Name = "textBoxSenha2";
+            this.textBoxSenha2.Size = new System.Drawing.Size(181, 23);
+            this.textBoxSenha2.TabIndex = 2;
             // 
             // TelaDeCadastramentoFuncionários
             // 
@@ -295,23 +315,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(31)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(682, 421);
+            this.Controls.Add(this.textBoxSenha2);
+            this.Controls.Add(this.labelSenha2);
             this.Controls.Add(this.buttonSalvarCadastro);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxUF);
             this.Controls.Add(this.labelUF);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxCidade);
             this.Controls.Add(this.labelCidade);
             this.Controls.Add(this.textBoxBairro);
             this.Controls.Add(this.labelBairro);
             this.Controls.Add(this.textBoxComplemento);
             this.Controls.Add(this.labelComplemento);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxNumero);
             this.Controls.Add(this.labelNumero);
             this.Controls.Add(this.textBoxRua);
             this.Controls.Add(this.labelRua);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxCEP);
             this.Controls.Add(this.labelCEP);
             this.Controls.Add(this.labelEndereco);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxCNPJ);
             this.Controls.Add(this.labelCNPJ);
             this.Controls.Add(this.labelCPF);
             this.Controls.Add(this.textBoxCPF);
@@ -339,22 +361,24 @@
         private System.Windows.Forms.TextBox textBoxCPF;
         private System.Windows.Forms.Label labelCPF;
         private System.Windows.Forms.Label labelCNPJ;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCNPJ;
         private System.Windows.Forms.Label labelEndereco;
         private System.Windows.Forms.Label labelCEP;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxCEP;
         private System.Windows.Forms.Label labelRua;
         private System.Windows.Forms.TextBox textBoxRua;
         private System.Windows.Forms.Label labelNumero;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxNumero;
         private System.Windows.Forms.Label labelComplemento;
         private System.Windows.Forms.TextBox textBoxComplemento;
         private System.Windows.Forms.Label labelBairro;
         private System.Windows.Forms.TextBox textBoxBairro;
         private System.Windows.Forms.Label labelCidade;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxCidade;
         private System.Windows.Forms.Label labelUF;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxUF;
         private System.Windows.Forms.Button buttonSalvarCadastro;
+        private System.Windows.Forms.Label labelSenha2;
+        private System.Windows.Forms.TextBox textBoxSenha2;
     }
 }

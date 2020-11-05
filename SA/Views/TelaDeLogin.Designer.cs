@@ -40,7 +40,7 @@
             // 
             // buttonEntrar
             // 
-            this.buttonEntrar.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonEntrar.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonEntrar.Location = new System.Drawing.Point(164, 257);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(75, 35);
@@ -50,7 +50,7 @@
             // 
             // buttonTelaCadastrar
             // 
-            this.buttonTelaCadastrar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonTelaCadastrar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonTelaCadastrar.Location = new System.Drawing.Point(280, 257);
             this.buttonTelaCadastrar.Name = "buttonTelaCadastrar";
             this.buttonTelaCadastrar.Size = new System.Drawing.Size(91, 35);
