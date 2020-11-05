@@ -96,8 +96,11 @@ namespace SA.Models
                     .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.Senha)
+                    .IsRequired()
                     .HasColumnName("SENHA")
-                    .HasColumnType("int(10)");
+                    .HasColumnType("varchar(15)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.Telefone)
                     .IsRequired()

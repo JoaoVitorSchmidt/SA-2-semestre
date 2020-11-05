@@ -21,7 +21,7 @@ namespace SA.Views
         {
             Cadastro cad = new Cadastro();
             cad.Nome = textBoxNome2.Text;
-            cad.Senha = int.Parse(textBoxSenha2.Text);
+            cad.Senha = textBoxSenha2.Text;
             cad.Cpf = textBoxCPF.Text;
             cad.Cep = textBoxCEP.Text;
             cad.Bairro = textBoxBairro.Text;
