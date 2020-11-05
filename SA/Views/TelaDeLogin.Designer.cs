@@ -40,8 +40,8 @@
             // 
             // buttonEntrar
             // 
-            this.buttonEntrar.Font = new System.Drawing.Font("Bebas Neue", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonEntrar.Location = new System.Drawing.Point(173, 257);
+            this.buttonEntrar.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonEntrar.Location = new System.Drawing.Point(164, 257);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(75, 35);
             this.buttonEntrar.TabIndex = 0;
@@ -50,10 +50,10 @@
             // 
             // buttonTelaCadastrar
             // 
-            this.buttonTelaCadastrar.Font = new System.Drawing.Font("Bebas Neue", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTelaCadastrar.Location = new System.Drawing.Point(288, 257);
+            this.buttonTelaCadastrar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonTelaCadastrar.Location = new System.Drawing.Point(280, 257);
             this.buttonTelaCadastrar.Name = "buttonTelaCadastrar";
-            this.buttonTelaCadastrar.Size = new System.Drawing.Size(75, 35);
+            this.buttonTelaCadastrar.Size = new System.Drawing.Size(91, 35);
             this.buttonTelaCadastrar.TabIndex = 0;
             this.buttonTelaCadastrar.Text = "Cadastrar";
             this.buttonTelaCadastrar.UseVisualStyleBackColor = true;
@@ -90,11 +90,11 @@
             // 
             this.labelNome1.AutoSize = true;
             this.labelNome1.BackColor = System.Drawing.Color.Transparent;
-            this.labelNome1.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNome1.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNome1.ForeColor = System.Drawing.Color.White;
-            this.labelNome1.Location = new System.Drawing.Point(120, 168);
+            this.labelNome1.Location = new System.Drawing.Point(115, 165);
             this.labelNome1.Name = "labelNome1";
-            this.labelNome1.Size = new System.Drawing.Size(40, 19);
+            this.labelNome1.Size = new System.Drawing.Size(52, 20);
             this.labelNome1.TabIndex = 2;
             this.labelNome1.Text = "Nome:";
             // 
@@ -102,11 +102,11 @@
             // 
             this.labelSenha1.AutoSize = true;
             this.labelSenha1.BackColor = System.Drawing.Color.Transparent;
-            this.labelSenha1.Font = new System.Drawing.Font("Bebas Neue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSenha1.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelSenha1.ForeColor = System.Drawing.Color.White;
-            this.labelSenha1.Location = new System.Drawing.Point(120, 208);
+            this.labelSenha1.Location = new System.Drawing.Point(112, 205);
             this.labelSenha1.Name = "labelSenha1";
-            this.labelSenha1.Size = new System.Drawing.Size(44, 19);
+            this.labelSenha1.Size = new System.Drawing.Size(55, 20);
             this.labelSenha1.TabIndex = 2;
             this.labelSenha1.Text = "Senha:";
             // 
@@ -123,8 +123,8 @@
             this.Controls.Add(this.buttonLogo1);
             this.Controls.Add(this.buttonTelaCadastrar);
             this.Controls.Add(this.buttonEntrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaDeLogin";
-            this.ShowIcon = false;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

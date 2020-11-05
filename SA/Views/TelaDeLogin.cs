@@ -38,7 +38,7 @@ namespace SA.Views
 
         private void telaCadastrar(object sender, EventArgs e)
         {
-            new TelaDeCadastramento().Show();
+            new TelaDeCadastramentoFuncionários().Show();
             this.Visible = false;
         }
     }

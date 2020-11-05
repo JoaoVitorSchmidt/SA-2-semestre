@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace SA.Views
 {
-    public partial class TelaDeCadastramento : Form
+    public partial class TelaDeCadastramentoFuncionários : Form
     {
-        public TelaDeCadastramento()
+        public TelaDeCadastramentoFuncionários()
         {
             InitializeComponent();
         }
