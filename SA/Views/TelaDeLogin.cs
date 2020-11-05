@@ -24,7 +24,7 @@ namespace SA.Views
             Cadastro c = new Cadastro();
             c.Nome = textBoxNome1.Text;
             c.Senha = int.Parse(textBoxSenha1.Text);
-            if (c.Nome == "admin" && c.Senha == 123)
+            if ((c.Nome == "admin") && (c.Senha == 123) && (c.Nome.Length > 1))
             {
                 MessageBox.Show("Login efetuado com sucesso!");
             }
