@@ -52,10 +52,10 @@
             this.labelCidade = new System.Windows.Forms.Label();
             this.textBoxCidade = new System.Windows.Forms.TextBox();
             this.labelUF = new System.Windows.Forms.Label();
-            this.textBoxUF = new System.Windows.Forms.TextBox();
             this.buttonSalvarCadastro = new System.Windows.Forms.Button();
             this.labelSenha2 = new System.Windows.Forms.Label();
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
+            this.comboBoxUF = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // labelDadosPessoais
@@ -271,13 +271,6 @@
             this.labelUF.TabIndex = 1;
             this.labelUF.Text = "UF";
             // 
-            // textBoxUF
-            // 
-            this.textBoxUF.Location = new System.Drawing.Point(262, 368);
-            this.textBoxUF.Name = "textBoxUF";
-            this.textBoxUF.Size = new System.Drawing.Size(117, 23);
-            this.textBoxUF.TabIndex = 2;
-            // 
             // buttonSalvarCadastro
             // 
             this.buttonSalvarCadastro.BackColor = System.Drawing.Color.Transparent;
@@ -309,16 +302,52 @@
             this.textBoxSenha2.Size = new System.Drawing.Size(181, 23);
             this.textBoxSenha2.TabIndex = 2;
             // 
+            // comboBoxUF
+            // 
+            this.comboBoxUF.FormattingEnabled = true;
+            this.comboBoxUF.Items.AddRange(new object[] {
+            "RO",
+            "AC",
+            "AM",
+            "RR",
+            "PA",
+            "AP",
+            "TO",
+            "MA",
+            "PI",
+            "CE",
+            "RN",
+            "PB",
+            "PE",
+            "AL",
+            "SE",
+            "BA",
+            "MG",
+            "ES",
+            "RJ",
+            "SP",
+            "PR",
+            "SC",
+            "RS",
+            "MS",
+            "MT",
+            "GO",
+            "DF"});
+            this.comboBoxUF.Location = new System.Drawing.Point(262, 367);
+            this.comboBoxUF.Name = "comboBoxUF";
+            this.comboBoxUF.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxUF.TabIndex = 4;
+            // 
             // TelaDeCadastramentoFuncionários
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(31)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(682, 421);
+            this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
             this.Controls.Add(this.labelSenha2);
             this.Controls.Add(this.buttonSalvarCadastro);
-            this.Controls.Add(this.textBoxUF);
             this.Controls.Add(this.labelUF);
             this.Controls.Add(this.textBoxCidade);
             this.Controls.Add(this.labelCidade);
@@ -376,9 +405,9 @@
         private System.Windows.Forms.Label labelCidade;
         private System.Windows.Forms.TextBox textBoxCidade;
         private System.Windows.Forms.Label labelUF;
-        private System.Windows.Forms.TextBox textBoxUF;
         private System.Windows.Forms.Button buttonSalvarCadastro;
         private System.Windows.Forms.Label labelSenha2;
         private System.Windows.Forms.TextBox textBoxSenha2;
+        private System.Windows.Forms.ComboBox comboBoxUF;
     }
 }
