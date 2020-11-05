@@ -22,6 +22,22 @@ namespace SA.Views
             Cadastro cad = new Cadastro();
             cad.Nome = textBoxNome2.Text;
             cad.Senha = int.Parse(textBoxSenha2.Text);
+            cad.Cpf = textBoxCPF.Text;
+            cad.Cep = textBoxCEP.Text;
+            cad.Bairro = textBoxBairro.Text;
+            cad.Complemento = textBoxComplemento.Text;
+            cad.Cnpj = textBoxCNPJ.Text;
+            cad.Cidade = textBoxCidade.Text;
+            cad.Numero = int.Parse(textBoxNumero.Text);
+            cad.Rua = textBoxRua.Text;
+            cad.Telefone = textBoxTelefone.Text;
+
+            using (var context = new churrascariaContext())
+            {
+                context.Cadastro.Add(cad);
+                context.SaveChanges();
+                MessageBox.Show("Salvo com Sucesso!");
+            }
         }
     }
 }

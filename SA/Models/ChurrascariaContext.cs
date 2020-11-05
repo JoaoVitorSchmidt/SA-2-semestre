@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace SA.Models
 {
-    public partial class ChurrascariaContext : DbContext
+    public partial class churrascariaContext : DbContext
     {
-        public ChurrascariaContext()
+        public churrascariaContext()
         {
         }
 
-        public ChurrascariaContext(DbContextOptions<ChurrascariaContext> options)
+        public churrascariaContext(DbContextOptions<churrascariaContext> options)
             : base(options)
         {
         }
@@ -23,7 +23,7 @@ namespace SA.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySql("server=localhost;database=Churrascaria;user=root;treattinyasboolean=true", x => x.ServerVersion("10.4.14-mariadb"));
+                optionsBuilder.UseMySql("server=localhost;database=churrascaria;user=root;treattinyasboolean=true", x => x.ServerVersion("10.4.14-mariadb"));
             }
         }
 
@@ -42,9 +42,69 @@ namespace SA.Models
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
+                entity.Property(e => e.Bairro)
+                    .IsRequired()
+                    .HasColumnName("BAIRRO")
+                    .HasColumnType("varchar(25)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Cep)
+                    .IsRequired()
+                    .HasColumnName("CEP")
+                    .HasColumnType("varchar(8)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Cidade)
+                    .IsRequired()
+                    .HasColumnName("CIDADE")
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Cnpj)
+                    .IsRequired()
+                    .HasColumnName("CNPJ")
+                    .HasColumnType("varchar(14)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Complemento)
+                    .IsRequired()
+                    .HasColumnName("COMPLEMENTO")
+                    .HasColumnType("varchar(40)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Cpf)
+                    .IsRequired()
+                    .HasColumnName("CPF")
+                    .HasColumnType("varchar(11)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Numero)
+                    .HasColumnName("NUMERO")
+                    .HasColumnType("int(6)");
+
+                entity.Property(e => e.Rua)
+                    .IsRequired()
+                    .HasColumnName("RUA")
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
                 entity.Property(e => e.Senha)
                     .HasColumnName("SENHA")
-                    .HasColumnType("int(11)");
+                    .HasColumnType("int(10)");
+
+                entity.Property(e => e.Telefone)
+                    .IsRequired()
+                    .HasColumnName("TELEFONE")
+                    .HasColumnType("varchar(15)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
             });
 
             modelBuilder.Entity<Estoque>(entity =>
