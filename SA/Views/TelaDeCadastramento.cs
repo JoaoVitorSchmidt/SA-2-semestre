@@ -38,6 +38,8 @@ namespace SA.Views
                 context.SaveChanges();
                 MessageBox.Show("Salvo com Sucesso!");
             }
+            new TelaDeLogin().Show();
+            this.Visible = false;
         }
     }
 }
