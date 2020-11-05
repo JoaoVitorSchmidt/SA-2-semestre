@@ -51,7 +51,7 @@
             // buttonTelaCadastrar
             // 
             this.buttonTelaCadastrar.Font = new System.Drawing.Font("Bebas Neue", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTelaCadastrar.Location = new System.Drawing.Point(289, 257);
+            this.buttonTelaCadastrar.Location = new System.Drawing.Point(288, 257);
             this.buttonTelaCadastrar.Name = "buttonTelaCadastrar";
             this.buttonTelaCadastrar.Size = new System.Drawing.Size(75, 35);
             this.buttonTelaCadastrar.TabIndex = 0;
