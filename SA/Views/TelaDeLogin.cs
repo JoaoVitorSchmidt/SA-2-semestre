@@ -14,6 +14,7 @@ namespace SA.Views
         public TelaDeLogin()
         {
             InitializeComponent();
+            buttonLogo1.Enabled = false;
             buttonEntrar.Click += entrar;
             buttonTelaCadastrar.Click += telaCadastrar;
         }
