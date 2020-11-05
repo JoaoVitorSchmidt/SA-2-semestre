@@ -36,7 +36,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 294);
             this.Name = "TelaGerenciamentoDeMesas";
-            this.Text = "TelaGerenciamentoDeMesas";
+            this.ShowIcon = false;
+            this.Text = "Gerenciamento de Mesas";
             this.ResumeLayout(false);
 
         }
