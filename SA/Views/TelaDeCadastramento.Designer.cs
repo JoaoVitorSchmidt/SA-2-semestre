@@ -301,6 +301,7 @@
             this.textBoxSenha2.Name = "textBoxSenha2";
             this.textBoxSenha2.Size = new System.Drawing.Size(181, 23);
             this.textBoxSenha2.TabIndex = 2;
+            this.textBoxSenha2.UseSystemPasswordChar = true;
             // 
             // comboBoxUF
             // 
