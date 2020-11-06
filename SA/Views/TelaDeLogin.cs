@@ -21,11 +21,6 @@ namespace SA.Views
 
         private void entrar(object sender, EventArgs e)
         {
-            using (var context = new churrascariaContext())
-            {
-                var login = from cad in context.Cadastro
-                                 select new { cad.Senha, cad.Nome };
-            }
             Cadastro c = new Cadastro();
             c.Nome = textBoxNome1.Text;
             c.Senha = textBoxSenha1.Text;
@@ -33,7 +28,7 @@ namespace SA.Views
             if ((c.Nome == "admin") && (c.Senha == "123") && (c.Nome.Length > 1))
             {
                 MessageBox.Show("Login efetuado com sucesso!");
-                new TelaDeCadastroDeMesas().Show();
+                new TelaDeInicio().Show();
                 this.Visible = false;
             }
             else

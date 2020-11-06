@@ -31,8 +31,9 @@ namespace SA.Views
             cad.Numero = int.Parse(textBoxNumero.Text);
             cad.Rua = textBoxRua.Text;
             cad.Telefone = textBoxTelefone.Text;
+            cad.Uf = comboBoxUF.SelectedItem.ToString();
 
-            using (var context = new churrascariaContext())
+            using (var context = new ChurrascariaContext())
             {
                 context.Cadastro.Add(cad);
                 context.SaveChanges();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SA.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,23 @@ namespace SA.Views
         public TelaDeCadastroDeMesas()
         {
             InitializeComponent();
+            buttonSalvar.Click += salvar;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void salvar(object sender, EventArgs e)
         {
+            Mesas cadMesa = new Mesas();
+            cadMesa.Numero = int.Parse(textBoxNumero.Text);
+            cadMesa.Nomemesa = textBoxNomeMesa.Text;
+            cadMesa.Observacao = textBoxObservacao.Text;
+            cadMesa.Status = comboBoxStatus.SelectedItem.ToString();
 
+            using (var context = new ChurrascariaContext())
+            {
+                context.Mesas.Add(cadMesa);
+                context.SaveChanges();
+                MessageBox.Show("Salvo com Sucesso!");
+            }
         }
     }
 }

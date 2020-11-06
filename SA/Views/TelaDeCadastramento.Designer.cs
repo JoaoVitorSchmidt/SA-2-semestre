@@ -55,8 +55,7 @@
             this.labelSenha2 = new System.Windows.Forms.Label();
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.comboBoxUF = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.buttonSalvarCadastro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelDadosPessoais
@@ -351,15 +350,17 @@
             this.comboBoxUF.Size = new System.Drawing.Size(121, 23);
             this.comboBoxUF.TabIndex = 4;
             // 
-            // pictureBox1
+            // buttonSalvarCadastro
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(495, 222);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 168);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.buttonSalvarCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSalvarCadastro.BackgroundImage")));
+            this.buttonSalvarCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonSalvarCadastro.Location = new System.Drawing.Point(508, 244);
+            this.buttonSalvarCadastro.Name = "buttonSalvarCadastro";
+            this.buttonSalvarCadastro.Size = new System.Drawing.Size(154, 147);
+            this.buttonSalvarCadastro.TabIndex = 5;
+            this.buttonSalvarCadastro.UseVisualStyleBackColor = true;
             // 
             // TelaDeCadastramentoFuncionários
             // 
@@ -367,7 +368,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
             this.Controls.Add(this.labelSenha2);
@@ -398,7 +399,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "TelaDeCadastramentoFuncionários";
             this.Text = "Cadastramento";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,6 +432,6 @@
         private System.Windows.Forms.Label labelSenha2;
         private System.Windows.Forms.TextBox textBoxSenha2;
         private System.Windows.Forms.ComboBox comboBoxUF;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonSalvarCadastro;
     }
 }

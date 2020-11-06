@@ -16,5 +16,6 @@ namespace SA.Models
         public string Complemento { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
+        public string Uf { get; set; }
     }
 }

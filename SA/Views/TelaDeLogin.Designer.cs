@@ -65,7 +65,7 @@
             this.buttonLogo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLogo1.BackgroundImage")));
             this.buttonLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonLogo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(31)))), ((int)(((byte)(12)))));
+            this.buttonLogo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.buttonLogo1.Location = new System.Drawing.Point(213, 12);
             this.buttonLogo1.Name = "buttonLogo1";
             this.buttonLogo1.Size = new System.Drawing.Size(262, 207);
