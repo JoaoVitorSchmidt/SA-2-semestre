@@ -52,17 +52,18 @@
             this.labelCidade = new System.Windows.Forms.Label();
             this.textBoxCidade = new System.Windows.Forms.TextBox();
             this.labelUF = new System.Windows.Forms.Label();
-            this.buttonSalvarCadastro = new System.Windows.Forms.Button();
             this.labelSenha2 = new System.Windows.Forms.Label();
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.comboBoxUF = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelDadosPessoais
             // 
             this.labelDadosPessoais.AutoSize = true;
             this.labelDadosPessoais.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDadosPessoais.ForeColor = System.Drawing.Color.White;
+            this.labelDadosPessoais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelDadosPessoais.Location = new System.Drawing.Point(12, 9);
             this.labelDadosPessoais.Name = "labelDadosPessoais";
             this.labelDadosPessoais.Size = new System.Drawing.Size(149, 27);
@@ -73,7 +74,7 @@
             // 
             this.labelNome2.AutoSize = true;
             this.labelNome2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNome2.ForeColor = System.Drawing.Color.White;
+            this.labelNome2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelNome2.Location = new System.Drawing.Point(23, 43);
             this.labelNome2.Name = "labelNome2";
             this.labelNome2.Size = new System.Drawing.Size(41, 18);
@@ -82,14 +83,18 @@
             // 
             // textBoxNome2
             // 
+            this.textBoxNome2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxNome2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxNome2.Location = new System.Drawing.Point(23, 65);
             this.textBoxNome2.Name = "textBoxNome2";
-            this.textBoxNome2.Size = new System.Drawing.Size(183, 23);
+            this.textBoxNome2.Size = new System.Drawing.Size(390, 23);
             this.textBoxNome2.TabIndex = 2;
             // 
             // textBoxTelefone
             // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(247, 65);
+            this.textBoxTelefone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.textBoxTelefone.Location = new System.Drawing.Point(461, 65);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(181, 23);
             this.textBoxTelefone.TabIndex = 2;
@@ -98,8 +103,8 @@
             // 
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTelefone.ForeColor = System.Drawing.Color.White;
-            this.labelTelefone.Location = new System.Drawing.Point(247, 43);
+            this.labelTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelTelefone.Location = new System.Drawing.Point(461, 43);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(63, 18);
             this.labelTelefone.TabIndex = 1;
@@ -107,6 +112,8 @@
             // 
             // textBoxCPF
             // 
+            this.textBoxCPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxCPF.Location = new System.Drawing.Point(24, 125);
             this.textBoxCPF.Name = "textBoxCPF";
             this.textBoxCPF.Size = new System.Drawing.Size(143, 23);
@@ -116,7 +123,7 @@
             // 
             this.labelCPF.AutoSize = true;
             this.labelCPF.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCPF.ForeColor = System.Drawing.Color.White;
+            this.labelCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelCPF.Location = new System.Drawing.Point(24, 103);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(31, 18);
@@ -127,7 +134,7 @@
             // 
             this.labelCNPJ.AutoSize = true;
             this.labelCNPJ.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCNPJ.ForeColor = System.Drawing.Color.White;
+            this.labelCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelCNPJ.Location = new System.Drawing.Point(219, 103);
             this.labelCNPJ.Name = "labelCNPJ";
             this.labelCNPJ.Size = new System.Drawing.Size(42, 18);
@@ -136,6 +143,8 @@
             // 
             // textBoxCNPJ
             // 
+            this.textBoxCNPJ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxCNPJ.Location = new System.Drawing.Point(219, 125);
             this.textBoxCNPJ.Name = "textBoxCNPJ";
             this.textBoxCNPJ.Size = new System.Drawing.Size(194, 23);
@@ -145,7 +154,7 @@
             // 
             this.labelEndereco.AutoSize = true;
             this.labelEndereco.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelEndereco.ForeColor = System.Drawing.Color.White;
+            this.labelEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelEndereco.Location = new System.Drawing.Point(12, 182);
             this.labelEndereco.Name = "labelEndereco";
             this.labelEndereco.Size = new System.Drawing.Size(96, 27);
@@ -156,7 +165,7 @@
             // 
             this.labelCEP.AutoSize = true;
             this.labelCEP.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCEP.ForeColor = System.Drawing.Color.White;
+            this.labelCEP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelCEP.Location = new System.Drawing.Point(23, 222);
             this.labelCEP.Name = "labelCEP";
             this.labelCEP.Size = new System.Drawing.Size(31, 18);
@@ -165,6 +174,8 @@
             // 
             // textBoxCEP
             // 
+            this.textBoxCEP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxCEP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxCEP.Location = new System.Drawing.Point(23, 244);
             this.textBoxCEP.Name = "textBoxCEP";
             this.textBoxCEP.Size = new System.Drawing.Size(117, 23);
@@ -174,7 +185,7 @@
             // 
             this.labelRua.AutoSize = true;
             this.labelRua.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelRua.ForeColor = System.Drawing.Color.White;
+            this.labelRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelRua.Location = new System.Drawing.Point(172, 222);
             this.labelRua.Name = "labelRua";
             this.labelRua.Size = new System.Drawing.Size(30, 18);
@@ -183,6 +194,8 @@
             // 
             // textBoxRua
             // 
+            this.textBoxRua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxRua.Location = new System.Drawing.Point(172, 244);
             this.textBoxRua.Name = "textBoxRua";
             this.textBoxRua.Size = new System.Drawing.Size(175, 23);
@@ -192,7 +205,7 @@
             // 
             this.labelNumero.AutoSize = true;
             this.labelNumero.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNumero.ForeColor = System.Drawing.Color.White;
+            this.labelNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelNumero.Location = new System.Drawing.Point(371, 222);
             this.labelNumero.Name = "labelNumero";
             this.labelNumero.Size = new System.Drawing.Size(60, 19);
@@ -201,6 +214,8 @@
             // 
             // textBoxNumero
             // 
+            this.textBoxNumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxNumero.Location = new System.Drawing.Point(371, 244);
             this.textBoxNumero.Name = "textBoxNumero";
             this.textBoxNumero.Size = new System.Drawing.Size(66, 23);
@@ -210,7 +225,7 @@
             // 
             this.labelComplemento.AutoSize = true;
             this.labelComplemento.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelComplemento.ForeColor = System.Drawing.Color.White;
+            this.labelComplemento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelComplemento.Location = new System.Drawing.Point(23, 287);
             this.labelComplemento.Name = "labelComplemento";
             this.labelComplemento.Size = new System.Drawing.Size(85, 18);
@@ -219,6 +234,8 @@
             // 
             // textBoxComplemento
             // 
+            this.textBoxComplemento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxComplemento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxComplemento.Location = new System.Drawing.Point(23, 309);
             this.textBoxComplemento.Name = "textBoxComplemento";
             this.textBoxComplemento.Size = new System.Drawing.Size(183, 23);
@@ -228,7 +245,7 @@
             // 
             this.labelBairro.AutoSize = true;
             this.labelBairro.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelBairro.ForeColor = System.Drawing.Color.White;
+            this.labelBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelBairro.Location = new System.Drawing.Point(247, 287);
             this.labelBairro.Name = "labelBairro";
             this.labelBairro.Size = new System.Drawing.Size(46, 18);
@@ -237,16 +254,18 @@
             // 
             // textBoxBairro
             // 
+            this.textBoxBairro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxBairro.Location = new System.Drawing.Point(247, 309);
             this.textBoxBairro.Name = "textBoxBairro";
-            this.textBoxBairro.Size = new System.Drawing.Size(166, 23);
+            this.textBoxBairro.Size = new System.Drawing.Size(190, 23);
             this.textBoxBairro.TabIndex = 2;
             // 
             // labelCidade
             // 
             this.labelCidade.AutoSize = true;
             this.labelCidade.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCidade.ForeColor = System.Drawing.Color.White;
+            this.labelCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.labelCidade.Location = new System.Drawing.Point(24, 346);
             this.labelCidade.Name = "labelCidade";
             this.labelCidade.Size = new System.Drawing.Size(50, 18);
@@ -255,41 +274,30 @@
             // 
             // textBoxCidade
             // 
+            this.textBoxCidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxCidade.Location = new System.Drawing.Point(24, 368);
             this.textBoxCidade.Name = "textBoxCidade";
-            this.textBoxCidade.Size = new System.Drawing.Size(197, 23);
+            this.textBoxCidade.Size = new System.Drawing.Size(252, 23);
             this.textBoxCidade.TabIndex = 2;
             // 
             // labelUF
             // 
             this.labelUF.AutoSize = true;
             this.labelUF.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUF.ForeColor = System.Drawing.Color.White;
-            this.labelUF.Location = new System.Drawing.Point(262, 346);
+            this.labelUF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelUF.Location = new System.Drawing.Point(316, 346);
             this.labelUF.Name = "labelUF";
             this.labelUF.Size = new System.Drawing.Size(26, 18);
             this.labelUF.TabIndex = 1;
             this.labelUF.Text = "UF";
             // 
-            // buttonSalvarCadastro
-            // 
-            this.buttonSalvarCadastro.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSalvarCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSalvarCadastro.BackgroundImage")));
-            this.buttonSalvarCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(31)))), ((int)(((byte)(12)))));
-            this.buttonSalvarCadastro.Location = new System.Drawing.Point(508, 222);
-            this.buttonSalvarCadastro.Name = "buttonSalvarCadastro";
-            this.buttonSalvarCadastro.Size = new System.Drawing.Size(121, 115);
-            this.buttonSalvarCadastro.TabIndex = 3;
-            this.buttonSalvarCadastro.UseVisualStyleBackColor = false;
-            // 
             // labelSenha2
             // 
             this.labelSenha2.AutoSize = true;
             this.labelSenha2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSenha2.ForeColor = System.Drawing.Color.White;
-            this.labelSenha2.Location = new System.Drawing.Point(461, 84);
+            this.labelSenha2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelSenha2.Location = new System.Drawing.Point(461, 103);
             this.labelSenha2.Name = "labelSenha2";
             this.labelSenha2.Size = new System.Drawing.Size(45, 18);
             this.labelSenha2.TabIndex = 1;
@@ -297,13 +305,18 @@
             // 
             // textBoxSenha2
             // 
-            this.textBoxSenha2.Location = new System.Drawing.Point(461, 106);
+            this.textBoxSenha2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxSenha2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.textBoxSenha2.Location = new System.Drawing.Point(461, 125);
             this.textBoxSenha2.Name = "textBoxSenha2";
             this.textBoxSenha2.Size = new System.Drawing.Size(181, 23);
             this.textBoxSenha2.TabIndex = 2;
+            this.textBoxSenha2.UseSystemPasswordChar = true;
             // 
             // comboBoxUF
             // 
+            this.comboBoxUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxUF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.comboBoxUF.FormattingEnabled = true;
             this.comboBoxUF.Items.AddRange(new object[] {
             "RO",
@@ -333,21 +346,31 @@
             "MT",
             "GO",
             "DF"});
-            this.comboBoxUF.Location = new System.Drawing.Point(262, 367);
+            this.comboBoxUF.Location = new System.Drawing.Point(316, 368);
             this.comboBoxUF.Name = "comboBoxUF";
             this.comboBoxUF.Size = new System.Drawing.Size(121, 23);
             this.comboBoxUF.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(495, 222);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(176, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaDeCadastramentoFuncionários
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(31)))), ((int)(((byte)(12)))));
-            this.ClientSize = new System.Drawing.Size(682, 421);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
             this.Controls.Add(this.labelSenha2);
-            this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.labelUF);
             this.Controls.Add(this.textBoxCidade);
             this.Controls.Add(this.labelCidade);
@@ -375,6 +398,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "TelaDeCadastramentoFuncionários";
             this.Text = "Cadastramento";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,9 +429,9 @@
         private System.Windows.Forms.Label labelCidade;
         private System.Windows.Forms.TextBox textBoxCidade;
         private System.Windows.Forms.Label labelUF;
-        private System.Windows.Forms.Button buttonSalvarCadastro;
         private System.Windows.Forms.Label labelSenha2;
         private System.Windows.Forms.TextBox textBoxSenha2;
         private System.Windows.Forms.ComboBox comboBoxUF;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
