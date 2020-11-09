@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace SA.Views
 {
-    public partial class TelaDeInicio : Form
+    public partial class TelaDeInicioGerente : Form
     {
-        public TelaDeInicio()
+        public TelaDeInicioGerente()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

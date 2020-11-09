@@ -8,16 +8,11 @@ using System.Windows.Forms;
 
 namespace SA.Views
 {
-    public partial class TelaGerenciamentoDeMesas : Form
+    public partial class TelaDeInicioAtendente : Form
     {
-        public TelaGerenciamentoDeMesas()
+        public TelaDeInicioAtendente()
         {
             InitializeComponent();
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
