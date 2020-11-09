@@ -40,6 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonTelaInicial = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxNumero
@@ -165,12 +166,24 @@
             this.buttonTelaInicial.Text = "Início";
             this.buttonTelaInicial.UseVisualStyleBackColor = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(264, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(198, 32);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Tabela das Mesas";
+            // 
             // TelaDeCadastroDeMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonTelaInicial);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.button1);
@@ -203,5 +216,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonTelaInicial;
+        private System.Windows.Forms.Label label5;
     }
 }

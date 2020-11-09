@@ -28,7 +28,7 @@ namespace SA.Views
             if ((c.Nome == "admin") && (c.Senha == "123") && (c.Nome.Length > 1))
             {
                 MessageBox.Show("Login efetuado com sucesso!");
-                new TelaDeInicio().Show();
+                new TelaDeInicioGerente().Show();
                 this.Visible = false;
             }
             else

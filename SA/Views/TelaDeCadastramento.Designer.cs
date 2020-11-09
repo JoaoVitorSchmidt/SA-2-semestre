@@ -56,6 +56,8 @@
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.comboBoxUF = new System.Windows.Forms.ComboBox();
             this.buttonSalvarCadastro = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelDadosPessoais
@@ -86,16 +88,16 @@
             this.textBoxNome2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.textBoxNome2.Location = new System.Drawing.Point(23, 65);
             this.textBoxNome2.Name = "textBoxNome2";
-            this.textBoxNome2.Size = new System.Drawing.Size(390, 23);
+            this.textBoxNome2.Size = new System.Drawing.Size(270, 23);
             this.textBoxNome2.TabIndex = 2;
             // 
             // textBoxTelefone
             // 
             this.textBoxTelefone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.textBoxTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.textBoxTelefone.Location = new System.Drawing.Point(461, 65);
+            this.textBoxTelefone.Location = new System.Drawing.Point(325, 65);
             this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.Size = new System.Drawing.Size(181, 23);
+            this.textBoxTelefone.Size = new System.Drawing.Size(135, 23);
             this.textBoxTelefone.TabIndex = 2;
             // 
             // labelTelefone
@@ -103,7 +105,7 @@
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.labelTelefone.Location = new System.Drawing.Point(461, 43);
+            this.labelTelefone.Location = new System.Drawing.Point(325, 43);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(63, 18);
             this.labelTelefone.TabIndex = 1;
@@ -362,12 +364,35 @@
             this.buttonSalvarCadastro.TabIndex = 5;
             this.buttonSalvarCadastro.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(496, 65);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(146, 23);
+            this.comboBox1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.label1.Location = new System.Drawing.Point(496, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Profissão";
+            // 
             // TelaDeCadastramentoFuncionários
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
@@ -433,5 +458,7 @@
         private System.Windows.Forms.TextBox textBoxSenha2;
         private System.Windows.Forms.ComboBox comboBoxUF;
         private System.Windows.Forms.Button buttonSalvarCadastro;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
