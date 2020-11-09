@@ -6,6 +6,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
+using SA.Views;
 
 namespace SA.Views
 {
@@ -21,19 +23,25 @@ namespace SA.Views
 
         private void entrar(object sender, EventArgs e)
         {
-            Cadastro c = new Cadastro();
-            c.Nome = textBoxNome1.Text;
-            c.Senha = textBoxSenha1.Text;
+            var nome = textBoxNome1.Text;
+            var senha = textBoxSenha1.Text;
 
-            if ((c.Nome == "admin") && (c.Senha == "123") && (c.Nome.Length > 1))
+            using (var context = new ChurrascariaContext())
             {
-                MessageBox.Show("Login efetuado com sucesso!");
-                new TelaDeInicioGerente().Show();
-                this.Visible = false;
-            }
-            else
-            {
-                MessageBox.Show("Login inválido \nFavor tentar novamente, ou clicar no botão 'cadastrar' para poder se cadastrar.");
+                var funcionario = from f in context.Cadastro
+                                  where f.Nome == nome
+                                  && f.Senha == senha
+                                  select f;
+                if (funcionario != null)
+                {
+                    MessageBox.Show("Login efetuado com sucesso!");
+                    new TelaDeInicio().Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Login inválido \nFavor tentar novamente, ou clicar no botão 'cadastrar' para poder se cadastrar.");
+                }
             }
         }
 
