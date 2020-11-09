@@ -36,6 +36,9 @@
             this.textBoxSenha1 = new System.Windows.Forms.TextBox();
             this.labelNome1 = new System.Windows.Forms.Label();
             this.labelSenha1 = new System.Windows.Forms.Label();
+            this.textBoxTrabalho = new System.Windows.Forms.TextBox();
+            this.comboBoxProfissao = new System.Windows.Forms.ComboBox();
+            this.labelProfissao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonEntrar
@@ -66,9 +69,9 @@
             this.buttonLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonLogo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonLogo1.Location = new System.Drawing.Point(213, 12);
+            this.buttonLogo1.Location = new System.Drawing.Point(218, 12);
             this.buttonLogo1.Name = "buttonLogo1";
-            this.buttonLogo1.Size = new System.Drawing.Size(262, 207);
+            this.buttonLogo1.Size = new System.Drawing.Size(248, 196);
             this.buttonLogo1.TabIndex = 0;
             this.buttonLogo1.TabStop = false;
             this.buttonLogo1.UseVisualStyleBackColor = true;
@@ -77,7 +80,7 @@
             // 
             this.textBoxNome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.textBoxNome1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxNome1.Location = new System.Drawing.Point(213, 266);
+            this.textBoxNome1.Location = new System.Drawing.Point(213, 232);
             this.textBoxNome1.Name = "textBoxNome1";
             this.textBoxNome1.Size = new System.Drawing.Size(262, 29);
             this.textBoxNome1.TabIndex = 1;
@@ -86,7 +89,7 @@
             // 
             this.textBoxSenha1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.textBoxSenha1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxSenha1.Location = new System.Drawing.Point(213, 321);
+            this.textBoxSenha1.Location = new System.Drawing.Point(213, 287);
             this.textBoxSenha1.Name = "textBoxSenha1";
             this.textBoxSenha1.Size = new System.Drawing.Size(262, 29);
             this.textBoxSenha1.TabIndex = 1;
@@ -98,7 +101,7 @@
             this.labelNome1.BackColor = System.Drawing.Color.Transparent;
             this.labelNome1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNome1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.labelNome1.Location = new System.Drawing.Point(155, 270);
+            this.labelNome1.Location = new System.Drawing.Point(155, 236);
             this.labelNome1.Name = "labelNome1";
             this.labelNome1.Size = new System.Drawing.Size(55, 23);
             this.labelNome1.TabIndex = 2;
@@ -110,11 +113,50 @@
             this.labelSenha1.BackColor = System.Drawing.Color.Transparent;
             this.labelSenha1.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelSenha1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.labelSenha1.Location = new System.Drawing.Point(152, 325);
+            this.labelSenha1.Location = new System.Drawing.Point(152, 291);
             this.labelSenha1.Name = "labelSenha1";
             this.labelSenha1.Size = new System.Drawing.Size(55, 20);
             this.labelSenha1.TabIndex = 2;
             this.labelSenha1.Text = "Senha:";
+            // 
+            // textBoxTrabalho
+            // 
+            this.textBoxTrabalho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxTrabalho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxTrabalho.Location = new System.Drawing.Point(473, 206);
+            this.textBoxTrabalho.Name = "textBoxTrabalho";
+            this.textBoxTrabalho.ReadOnly = true;
+            this.textBoxTrabalho.Size = new System.Drawing.Size(10, 29);
+            this.textBoxTrabalho.TabIndex = 1;
+            this.textBoxTrabalho.TabStop = false;
+            this.textBoxTrabalho.Visible = false;
+            // 
+            // comboBoxProfissao
+            // 
+            this.comboBoxProfissao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxProfissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBoxProfissao.FormattingEnabled = true;
+            this.comboBoxProfissao.Items.AddRange(new object[] {
+            "Cozinheiro(a)",
+            "Gerente",
+            "Atendente",
+            "Caixa"});
+            this.comboBoxProfissao.Location = new System.Drawing.Point(213, 335);
+            this.comboBoxProfissao.Name = "comboBoxProfissao";
+            this.comboBoxProfissao.Size = new System.Drawing.Size(262, 23);
+            this.comboBoxProfissao.TabIndex = 6;
+            // 
+            // labelProfissao
+            // 
+            this.labelProfissao.AutoSize = true;
+            this.labelProfissao.BackColor = System.Drawing.Color.Transparent;
+            this.labelProfissao.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelProfissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelProfissao.Location = new System.Drawing.Point(132, 334);
+            this.labelProfissao.Name = "labelProfissao";
+            this.labelProfissao.Size = new System.Drawing.Size(78, 20);
+            this.labelProfissao.TabIndex = 2;
+            this.labelProfissao.Text = "Profissão:";
             // 
             // TelaDeLogin
             // 
@@ -122,6 +164,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.labelProfissao);
+            this.Controls.Add(this.comboBoxProfissao);
             this.Controls.Add(this.labelSenha1);
             this.Controls.Add(this.labelNome1);
             this.Controls.Add(this.textBoxSenha1);
@@ -147,5 +191,8 @@
         private System.Windows.Forms.TextBox textBoxSenha1;
         private System.Windows.Forms.Label labelNome1;
         private System.Windows.Forms.Label labelSenha1;
+        private System.Windows.Forms.TextBox textBoxTrabalho;
+        private System.Windows.Forms.ComboBox comboBoxProfissao;
+        private System.Windows.Forms.Label labelProfissao;
     }
 }

@@ -56,7 +56,7 @@
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.comboBoxUF = new System.Windows.Forms.ComboBox();
             this.buttonSalvarCadastro = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxProfissao2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -364,15 +364,20 @@
             this.buttonSalvarCadastro.TabIndex = 5;
             this.buttonSalvarCadastro.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboBoxProfissao2
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(496, 65);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 23);
-            this.comboBox1.TabIndex = 6;
+            this.comboBoxProfissao2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxProfissao2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBoxProfissao2.FormattingEnabled = true;
+            this.comboBoxProfissao2.Items.AddRange(new object[] {
+            "Cozinheiro(a)",
+            "Gerente",
+            "Atendente",
+            "Caixa"});
+            this.comboBoxProfissao2.Location = new System.Drawing.Point(496, 65);
+            this.comboBoxProfissao2.Name = "comboBoxProfissao2";
+            this.comboBoxProfissao2.Size = new System.Drawing.Size(146, 23);
+            this.comboBoxProfissao2.TabIndex = 6;
             // 
             // label1
             // 
@@ -392,7 +397,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxProfissao2);
             this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
@@ -458,7 +463,7 @@
         private System.Windows.Forms.TextBox textBoxSenha2;
         private System.Windows.Forms.ComboBox comboBoxUF;
         private System.Windows.Forms.Button buttonSalvarCadastro;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxProfissao2;
         private System.Windows.Forms.Label label1;
     }
 }

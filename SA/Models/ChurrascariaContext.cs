@@ -16,8 +16,8 @@ namespace SA.Models
         }
 
         public virtual DbSet<Cadastro> Cadastro { get; set; }
-        public virtual DbSet<Estoque> Estoque { get; set; }
         public virtual DbSet<Mesas> Mesas { get; set; }
+        public virtual DbSet<Pedidos> Pedidos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -32,14 +32,15 @@ namespace SA.Models
         {
             modelBuilder.Entity<Cadastro>(entity =>
             {
-                entity.HasKey(e => e.Nome)
-                    .HasName("PRIMARY");
-
                 entity.ToTable("cadastro");
 
-                entity.Property(e => e.Nome)
-                    .HasColumnName("NOME")
-                    .HasColumnType("varchar(40)")
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("int(2)");
+
+                entity.Property(e => e.Areatrabalho)
+                    .HasColumnName("AREATRABALHO")
+                    .HasColumnType("varchar(15)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
@@ -79,6 +80,12 @@ namespace SA.Models
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
+                entity.Property(e => e.Nome)
+                    .HasColumnName("NOME")
+                    .HasColumnType("varchar(40)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
                 entity.Property(e => e.Numero)
                     .HasColumnName("NUMERO")
                     .HasColumnType("int(6)");
@@ -106,22 +113,6 @@ namespace SA.Models
                     .HasColumnType("char(2)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
-            });
-
-            modelBuilder.Entity<Estoque>(entity =>
-            {
-                entity.HasKey(e => e.Code)
-                    .HasName("PRIMARY");
-
-                entity.ToTable("estoque");
-
-                entity.Property(e => e.Code)
-                    .HasColumnType("int(11)")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.Quant).HasColumnType("int(11)");
-
-                entity.Property(e => e.ValorUnit).HasColumnType("decimal(10,2)");
             });
 
             modelBuilder.Entity<Mesas>(entity =>
@@ -153,6 +144,29 @@ namespace SA.Models
                     .HasColumnType("varchar(10)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
+            });
+
+            modelBuilder.Entity<Pedidos>(entity =>
+            {
+                entity.ToTable("pedidos");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("int(2)");
+
+                entity.Property(e => e.Nmesa)
+                    .HasColumnName("NMESA")
+                    .HasColumnType("int(2)");
+
+                entity.Property(e => e.Observacoes)
+                    .HasColumnName("OBSERVACOES")
+                    .HasColumnType("varchar(40)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Valor)
+                    .HasColumnName("VALOR")
+                    .HasColumnType("decimal(10,2)");
             });
 
             OnModelCreatingPartial(modelBuilder);

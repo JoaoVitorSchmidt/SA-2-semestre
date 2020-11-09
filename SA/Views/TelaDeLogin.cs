@@ -25,17 +25,39 @@ namespace SA.Views
         {
             var nome = textBoxNome1.Text;
             var senha = textBoxSenha1.Text;
+            var areaTrabalho = comboBoxProfissao.SelectedItem.ToString();
+            
 
             using (var context = new ChurrascariaContext())
             {
                 var funcionario = from f in context.Cadastro
                                   where f.Nome == nome
                                   && f.Senha == senha
+                                  && f.Areatrabalho == areaTrabalho
                                   select f;
-                if (funcionario != null)
+
+                if (funcionario.FirstOrDefault() != null && areaTrabalho == "Atendente")
                 {
                     MessageBox.Show("Login efetuado com sucesso!");
-                    new TelaDeInicio().Show();
+                    new TelaDeInicioAtendente().Show();
+                    this.Visible = false;
+                }
+                else if (funcionario.FirstOrDefault() != null && areaTrabalho == "Caixa")
+                {
+                    MessageBox.Show("Login efetuado com sucesso!");
+                    new TelaDeInicioCaixa().Show();
+                    this.Visible = false;
+                }
+                else if (funcionario.FirstOrDefault() != null && areaTrabalho == "Cozinheiro(a)")
+                {
+                    MessageBox.Show("Login efetuado com sucesso!");
+                    new TelaDeInicioCozinheiro().Show();
+                    this.Visible = false;
+                }
+                else if (funcionario.FirstOrDefault() != null && areaTrabalho == "Gerente")
+                {
+                    MessageBox.Show("Login efetuado com sucesso!");
+                    new TelaDeInicioGerente().Show();
                     this.Visible = false;
                 }
                 else

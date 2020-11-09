@@ -5,8 +5,10 @@ namespace SA.Models
 {
     public partial class Cadastro
     {
+        public int Id { get; set; }
         public string Nome { get; set; }
         public string Senha { get; set; }
+        public string Areatrabalho { get; set; }
         public string Telefone { get; set; }
         public string Cpf { get; set; }
         public string Cnpj { get; set; }

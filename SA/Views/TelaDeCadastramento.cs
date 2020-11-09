@@ -32,6 +32,7 @@ namespace SA.Views
             cad.Rua = textBoxRua.Text;
             cad.Telefone = textBoxTelefone.Text;
             cad.Uf = comboBoxUF.SelectedItem.ToString();
+            cad.Areatrabalho = comboBoxProfissao2.SelectedItem.ToString();
 
             using (var context = new ChurrascariaContext())
             {
