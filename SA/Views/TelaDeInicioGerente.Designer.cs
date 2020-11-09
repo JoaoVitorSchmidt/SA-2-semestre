@@ -44,7 +44,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(216, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(261, 225);
+            this.pictureBox1.Size = new System.Drawing.Size(279, 225);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -82,7 +82,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 29);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Cadastro de Cliente";
+            this.button3.Text = "Entregas";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -94,8 +94,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 29);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Gerenciamento de Prod.";
+            this.button4.Text = "Gerenciamento de Est.";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -106,7 +107,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(197, 29);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Cadastro de Produtos";
+            this.button5.Text = "Cadastro de Estoque";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button6
@@ -121,7 +122,7 @@
             this.button6.Text = "Sign out";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // TelaDeInicio
+            // TelaDeInicioGerente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +136,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "TelaDeInicio";
+            this.Name = "TelaDeInicioGerente";
             this.Text = "Início";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
