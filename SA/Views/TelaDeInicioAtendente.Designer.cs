@@ -39,9 +39,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(211, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(175, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(295, 230);
+            this.pictureBox1.Size = new System.Drawing.Size(347, 277);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -51,9 +51,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(47, 347);
+            this.button1.Location = new System.Drawing.Point(35, 339);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 37);
+            this.button1.Size = new System.Drawing.Size(170, 45);
             this.button1.TabIndex = 1;
             this.button1.Text = "Cadastro Pedidos";
             this.button1.UseVisualStyleBackColor = false;
@@ -63,9 +63,9 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button2.Location = new System.Drawing.Point(276, 347);
+            this.button2.Location = new System.Drawing.Point(264, 339);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 37);
+            this.button2.Size = new System.Drawing.Size(170, 45);
             this.button2.TabIndex = 2;
             this.button2.Text = "Geren. de Mesas";
             this.button2.UseVisualStyleBackColor = false;
@@ -75,9 +75,9 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button3.Location = new System.Drawing.Point(500, 347);
+            this.button3.Location = new System.Drawing.Point(488, 339);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 37);
+            this.button3.Size = new System.Drawing.Size(170, 45);
             this.button3.TabIndex = 3;
             this.button3.Text = "Sign Out";
             this.button3.UseVisualStyleBackColor = false;

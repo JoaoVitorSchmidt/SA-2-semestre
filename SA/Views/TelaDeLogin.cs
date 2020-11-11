@@ -25,7 +25,6 @@ namespace SA.Views
         {
             var nome = textBoxNome1.Text;
             var senha = textBoxSenha1.Text;
-            var areaTrabalho = comboBoxProfissao.SelectedItem.ToString();
             
 
             using (var context = new ChurrascariaContext())
@@ -33,32 +32,30 @@ namespace SA.Views
                 var funcionario = from f in context.Cadastro
                                   where f.Nome == nome
                                   && f.Senha == senha
-                                  && f.Areatrabalho == areaTrabalho
                                   select f;
 
-                if (funcionario.FirstOrDefault() != null && areaTrabalho == "Atendente")
+                if (funcionario.FirstOrDefault() != null)
                 {
                     MessageBox.Show("Login efetuado com sucesso!");
-                    new TelaDeInicioAtendente().Show();
-                    this.Visible = false;
-                }
-                else if (funcionario.FirstOrDefault() != null && areaTrabalho == "Caixa")
-                {
-                    MessageBox.Show("Login efetuado com sucesso!");
-                    new TelaDeInicioCaixa().Show();
-                    this.Visible = false;
-                }
-                else if (funcionario.FirstOrDefault() != null && areaTrabalho == "Cozinheiro(a)")
-                {
-                    MessageBox.Show("Login efetuado com sucesso!");
-                    new TelaDeInicioCozinheiro().Show();
-                    this.Visible = false;
-                }
-                else if (funcionario.FirstOrDefault() != null && areaTrabalho == "Gerente")
-                {
-                    MessageBox.Show("Login efetuado com sucesso!");
-                    new TelaDeInicioGerente().Show();
-                    this.Visible = false;
+
+                    Cadastro profissao = (Cadastro) funcionario.FirstOrDefault();
+                    if (profissao.Areatrabalho == "Caixa")
+                    {
+                        new TelaDeInicioCaixa().Show();
+                        this.Visible = false;
+                    } else if (profissao.Areatrabalho == "Atendente")
+                    {
+                        new TelaDeInicioAtendente().Show();
+                        this.Visible = false;
+                    }else if (profissao.Areatrabalho == "Cozinheiro(a)")
+                    {
+                        new TelaDeInicioCozinheiro().Show();
+                        this.Visible = false;
+                    }else if (profissao.Areatrabalho == "Gerente")
+                    {
+                        new TelaDeInicioGerente().Show();
+                        this.Visible = false;
+                    }
                 }
                 else
                 {
