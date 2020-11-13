@@ -29,138 +29,204 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaGerenciamentoDeMesas));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.comboBoxStatsMesa = new System.Windows.Forms.ComboBox();
+            this.comboBoxStatsPedido = new System.Windows.Forms.ComboBox();
+            this.textBoxObservacao = new System.Windows.Forms.TextBox();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonInicio = new System.Windows.Forms.Button();
+            this.labelMesa = new System.Windows.Forms.Label();
+            this.labelStatusMesa = new System.Windows.Forms.Label();
+            this.labelStatusPedido = new System.Windows.Forms.Label();
+            this.labelObservacao = new System.Windows.Forms.Label();
+            this.buttonFundo = new System.Windows.Forms.Button();
+            this.comboBoxNMesa = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // comboBoxStatsMesa
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-11, 111);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(254, 204);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.comboBoxStatsMesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxStatsMesa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxStatsMesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBoxStatsMesa.FormattingEnabled = true;
+            this.comboBoxStatsMesa.Items.AddRange(new object[] {
+            "Ocupado",
+            "Livre",
+            "Reservado",
+            "A Espera de Limpeza"});
+            this.comboBoxStatsMesa.Location = new System.Drawing.Point(398, 164);
+            this.comboBoxStatsMesa.Name = "comboBoxStatsMesa";
+            this.comboBoxStatsMesa.Size = new System.Drawing.Size(111, 29);
+            this.comboBoxStatsMesa.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBoxStatsPedido
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(260, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(101, 29);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxStatsPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxStatsPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxStatsPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBoxStatsPedido.FormattingEnabled = true;
+            this.comboBoxStatsPedido.Items.AddRange(new object[] {
+            "Já feito",
+            "Esperando Atendente",
+            "Mesa Vazia"});
+            this.comboBoxStatsPedido.Location = new System.Drawing.Point(524, 164);
+            this.comboBoxStatsPedido.Name = "comboBoxStatsPedido";
+            this.comboBoxStatsPedido.Size = new System.Drawing.Size(162, 29);
+            this.comboBoxStatsPedido.TabIndex = 3;
             // 
-            // comboBox2
+            // textBoxObservacao
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(393, 126);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(102, 29);
-            this.comboBox2.TabIndex = 2;
+            this.textBoxObservacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxObservacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.textBoxObservacao.Location = new System.Drawing.Point(253, 233);
+            this.textBoxObservacao.Name = "textBoxObservacao";
+            this.textBoxObservacao.Size = new System.Drawing.Size(432, 29);
+            this.textBoxObservacao.TabIndex = 4;
             // 
-            // comboBox3
+            // buttonEditar
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(531, 126);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(162, 29);
-            this.comboBox3.TabIndex = 3;
+            this.buttonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonEditar.Location = new System.Drawing.Point(495, 301);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(142, 34);
+            this.buttonEditar.TabIndex = 5;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // buttonInicio
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.textBox1.Location = new System.Drawing.Point(260, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(432, 29);
-            this.textBox1.TabIndex = 4;
+            this.buttonInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonInicio.Location = new System.Drawing.Point(332, 301);
+            this.buttonInicio.Name = "buttonInicio";
+            this.buttonInicio.Size = new System.Drawing.Size(142, 34);
+            this.buttonInicio.TabIndex = 6;
+            this.buttonInicio.Text = "Início";
+            this.buttonInicio.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // labelMesa
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(260, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 34);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.labelMesa.AutoSize = true;
+            this.labelMesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.labelMesa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelMesa.ForeColor = System.Drawing.Color.White;
+            this.labelMesa.Location = new System.Drawing.Point(253, 140);
+            this.labelMesa.Name = "labelMesa";
+            this.labelMesa.Size = new System.Drawing.Size(130, 21);
+            this.labelMesa.TabIndex = 8;
+            this.labelMesa.Text = "Número da Mesa";
             // 
-            // button2
+            // labelStatusMesa
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button2.Location = new System.Drawing.Point(550, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 34);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Início";
-            this.button2.UseVisualStyleBackColor = false;
+            this.labelStatusMesa.AutoSize = true;
+            this.labelStatusMesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.labelStatusMesa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelStatusMesa.ForeColor = System.Drawing.Color.White;
+            this.labelStatusMesa.Location = new System.Drawing.Point(395, 140);
+            this.labelStatusMesa.Name = "labelStatusMesa";
+            this.labelStatusMesa.Size = new System.Drawing.Size(114, 21);
+            this.labelStatusMesa.TabIndex = 8;
+            this.labelStatusMesa.Text = "Status da Mesa";
             // 
-            // label1
+            // labelStatusPedido
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(241, 340);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 21);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "PS. Não sei colocar o fundo mais escuro atras das informações...";
+            this.labelStatusPedido.AutoSize = true;
+            this.labelStatusPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.labelStatusPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelStatusPedido.ForeColor = System.Drawing.Color.White;
+            this.labelStatusPedido.Location = new System.Drawing.Point(524, 140);
+            this.labelStatusPedido.Name = "labelStatusPedido";
+            this.labelStatusPedido.Size = new System.Drawing.Size(125, 21);
+            this.labelStatusPedido.TabIndex = 8;
+            this.labelStatusPedido.Text = "Status do Pedido";
+            // 
+            // labelObservacao
+            // 
+            this.labelObservacao.AutoSize = true;
+            this.labelObservacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.labelObservacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelObservacao.ForeColor = System.Drawing.Color.White;
+            this.labelObservacao.Location = new System.Drawing.Point(253, 209);
+            this.labelObservacao.Name = "labelObservacao";
+            this.labelObservacao.Size = new System.Drawing.Size(92, 21);
+            this.labelObservacao.TabIndex = 8;
+            this.labelObservacao.Text = "Observação";
+            // 
+            // buttonFundo
+            // 
+            this.buttonFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.buttonFundo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFundo.Location = new System.Drawing.Point(243, 12);
+            this.buttonFundo.Name = "buttonFundo";
+            this.buttonFundo.Size = new System.Drawing.Size(449, 339);
+            this.buttonFundo.TabIndex = 9;
+            this.buttonFundo.UseVisualStyleBackColor = false;
+            // 
+            // comboBoxNMesa
+            // 
+            this.comboBoxNMesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxNMesa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxNMesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBoxNMesa.FormattingEnabled = true;
+            this.comboBoxNMesa.Location = new System.Drawing.Point(253, 164);
+            this.comboBoxNMesa.Name = "comboBoxNMesa";
+            this.comboBoxNMesa.Size = new System.Drawing.Size(130, 29);
+            this.comboBoxNMesa.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 45);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(225, 180);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // TelaGerenciamentoDeMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(704, 441);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(704, 362);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.comboBoxNMesa);
+            this.Controls.Add(this.labelObservacao);
+            this.Controls.Add(this.labelStatusPedido);
+            this.Controls.Add(this.labelStatusMesa);
+            this.Controls.Add(this.labelMesa);
+            this.Controls.Add(this.buttonInicio);
+            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.textBoxObservacao);
+            this.Controls.Add(this.comboBoxStatsPedido);
+            this.Controls.Add(this.comboBoxStatsMesa);
+            this.Controls.Add(this.buttonFundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaGerenciamentoDeMesas";
             this.Text = "Gerenciamento de Mesas";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxStatsMesa;
+        private System.Windows.Forms.ComboBox comboBoxStatsPedido;
+        private System.Windows.Forms.TextBox textBoxObservacao;
+        private System.Windows.Forms.Button buttonEditar;
+        private System.Windows.Forms.Button buttonInicio;
+        private System.Windows.Forms.Label labelMesa;
+        private System.Windows.Forms.Label labelStatusMesa;
+        private System.Windows.Forms.Label labelStatusPedido;
+        private System.Windows.Forms.Label labelObservacao;
+        private System.Windows.Forms.Button buttonFundo;
+        private System.Windows.Forms.ComboBox comboBoxNMesa;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
