@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace SA.Views
 {
-    public partial class TelaGerenciamentoDeMesas : Form
+    public partial class TelaDeGerenciamentoDeMesasPart2 : Form
     {
-        public TelaGerenciamentoDeMesas()
+        public TelaDeGerenciamentoDeMesasPart2()
         {
             InitializeComponent();
         }
