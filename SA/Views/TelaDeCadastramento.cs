@@ -34,7 +34,7 @@ namespace SA.Views
             cad.Uf = comboBoxUF.SelectedItem.ToString();
             cad.Areatrabalho = comboBoxProfissao2.SelectedItem.ToString();
 
-            using (var context = new ChurrascariaContext())
+            using (var context = new churrascariaContext())
             {
                 context.Cadastro.Add(cad);
                 context.SaveChanges();

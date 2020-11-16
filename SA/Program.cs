@@ -18,7 +18,7 @@ namespace SA
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaDeLogin());
+            Application.Run(new TelaDeGerenciamentoDeMesas());
         }
     }
 }

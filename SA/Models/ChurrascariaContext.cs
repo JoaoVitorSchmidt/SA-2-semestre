@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace SA.Models
 {
-    public partial class ChurrascariaContext : DbContext
+    public partial class churrascariaContext : DbContext
     {
-        public ChurrascariaContext()
+        public churrascariaContext()
         {
         }
 
-        public ChurrascariaContext(DbContextOptions<ChurrascariaContext> options)
+        public churrascariaContext(DbContextOptions<churrascariaContext> options)
             : base(options)
         {
         }
@@ -24,7 +24,7 @@ namespace SA.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySql("server=localhost;database=Churrascaria;user=root;treattinyasboolean=true", x => x.ServerVersion("10.4.14-mariadb"));
+                optionsBuilder.UseMySql("server=localhost;database=churrascaria;user=root;treattinyasboolean=true", x => x.ServerVersion("10.4.14-mariadb"));
             }
         }
 
@@ -117,15 +117,11 @@ namespace SA.Models
 
             modelBuilder.Entity<Mesas>(entity =>
             {
-                entity.HasKey(e => e.Numero)
-                    .HasName("PRIMARY");
-
                 entity.ToTable("mesas");
 
-                entity.Property(e => e.Numero)
-                    .HasColumnName("NUMERO")
-                    .HasColumnType("int(4)")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("int(4)");
 
                 entity.Property(e => e.Nomemesa)
                     .HasColumnName("NOMEMESA")
@@ -135,13 +131,13 @@ namespace SA.Models
 
                 entity.Property(e => e.Observacao)
                     .HasColumnName("OBSERVACAO")
-                    .HasColumnType("varchar(20)")
+                    .HasColumnType("varchar(30)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.Status)
                     .HasColumnName("STATUS")
-                    .HasColumnType("varchar(10)")
+                    .HasColumnType("varchar(20)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
             });
@@ -154,13 +150,15 @@ namespace SA.Models
                     .HasColumnName("ID")
                     .HasColumnType("int(2)");
 
-                entity.Property(e => e.Nmesa)
-                    .HasColumnName("NMESA")
-                    .HasColumnType("int(2)");
-
-                entity.Property(e => e.Observacoes)
-                    .HasColumnName("OBSERVACOES")
+                entity.Property(e => e.Observacao)
+                    .HasColumnName("OBSERVACAO")
                     .HasColumnType("varchar(40)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Status)
+                    .HasColumnName("STATUS")
+                    .HasColumnType("varchar(10)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 

@@ -6,8 +6,8 @@ namespace SA.Models
     public partial class Pedidos
     {
         public int Id { get; set; }
-        public int Nmesa { get; set; }
+        public string Status { get; set; }
         public decimal Valor { get; set; }
-        public string Observacoes { get; set; }
+        public string Observacao { get; set; }
     }
 }

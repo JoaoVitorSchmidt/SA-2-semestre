@@ -27,7 +27,7 @@ namespace SA.Views
             var senha = textBoxSenha1.Text;
             
 
-            using (var context = new ChurrascariaContext())
+            using (var context = new churrascariaContext())
             {
                 var funcionario = from f in context.Cadastro
                                   where f.Nome == nome
