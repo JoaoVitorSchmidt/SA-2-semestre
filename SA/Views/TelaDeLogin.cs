@@ -51,10 +51,6 @@ namespace SA.Views
                     {
                         new TelaDeInicioCozinheiro().Show();
                         this.Visible = false;
-                    }else if (profissao.Areatrabalho == "Gerente")
-                    {
-                        new TelaDeInicioGerente().Show();
-                        this.Visible = false;
                     }
                 }
                 else

@@ -9,5 +9,10 @@ namespace SA.Models
         public string Nomemesa { get; set; }
         public string Observacao { get; set; }
         public string Status { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Nomemesa}";
+        }
     }
 }

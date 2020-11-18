@@ -29,40 +29,35 @@ namespace SA.Views
 
         private void carregarInformacoes()
         {
-            var statusPedido = comboBoxStatusPedido.Text;
-            var numMesa = int.Parse.ToString(comboBoxNumMesa.Text);
-            var statusMesa = comboBoxStatus.Text;
-
             using (var context = new churrascariaContext())
             {
-                var infoPedido = from ip in context.Pedidos
-                                  where ip.Status == statusPedido
-                                  select ip;
+                var mesas = from m in context.Mesas
+                            select m;
 
-                var infoMesa = from im in context.Mesas
-                                 where im.Status == statusMesa
-                                 && im.Id == numMesa
-                                 select im;
+                comboBoxNumMesa.DataSource = mesas.ToList();
 
-                var obs = from o in context.Mesas
-                         select new {o.Observacao};
+                var statusPedido = from s in context.Pedidos
+                            select s;
 
-                textBoxObservacao.Text = obs.ToString();
-
-                if (infoMesa.FirstOrDefault() != null)
-                {
-                    Mesas nMesa = (Mesas)infoMesa.FirstOrDefault();
-                    if (nMesa.Id == 1)
-                    {
-
-                    }
-                }
+                comboBoxStatusPedido.DataSource = statusPedido.ToList();
             }
         }
 
         private void editar(object sender, EventArgs e)
         {
-            
+            Mesas selecionada = (Mesas)comboBoxNumMesa.SelectedItem;
+            selecionada.Status = comboBoxStatus.Text;
+            selecionada.Observacao = textBoxObservacao.Text;
+
+            Pedidos selecionado = (Pedidos)comboBoxStatusPedido.SelectedItem;
+            selecionado.Status = comboBoxStatusPedido.Text;
+
+            using (var context = new churrascariaContext())
+            {
+                context.Update(selecionada);
+                context.Update(selecionado);
+                context.SaveChanges();
+            }
         }
     }
 }
