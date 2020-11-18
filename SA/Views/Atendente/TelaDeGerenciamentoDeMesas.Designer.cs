@@ -84,6 +84,11 @@
             this.comboBoxStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.comboBoxStatus.FormattingEnabled = true;
+            this.comboBoxStatus.Items.AddRange(new object[] {
+            "Ocupado",
+            "Livre",
+            "Reservado",
+            "A Espera de Limpeza"});
             this.comboBoxStatus.Location = new System.Drawing.Point(410, 81);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(102, 29);
@@ -95,6 +100,10 @@
             this.comboBoxStatusPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxStatusPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.comboBoxStatusPedido.FormattingEnabled = true;
+            this.comboBoxStatusPedido.Items.AddRange(new object[] {
+            "Já feito",
+            "Esperando Atendente",
+            "Mesa Vazia"});
             this.comboBoxStatusPedido.Location = new System.Drawing.Point(531, 81);
             this.comboBoxStatusPedido.Name = "comboBoxStatusPedido";
             this.comboBoxStatusPedido.Size = new System.Drawing.Size(162, 29);

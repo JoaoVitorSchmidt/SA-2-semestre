@@ -15,8 +15,7 @@ namespace SA
         [STAThread]
         static void Main()
         {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
+            //<TargetFrameworks>netcoreapeworks>Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TelaDeGerenciamentoDeMesas());
         }
