@@ -38,6 +38,7 @@
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.checkedListBox1.FormattingEnabled = true;
@@ -55,7 +56,7 @@
             "Suco 500 ml | R$ 5,00"});
             this.checkedListBox1.Location = new System.Drawing.Point(244, 91);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(424, 268);
+            this.checkedListBox1.Size = new System.Drawing.Size(424, 264);
             this.checkedListBox1.TabIndex = 0;
             // 
             // pictureBox1

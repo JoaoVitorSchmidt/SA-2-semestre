@@ -36,19 +36,11 @@ namespace SA.Views
 
                 comboBoxNumMesa.DataSource = mesas.ToList();
 
-                var obs = from o in context.Mesas
-                         select new {o.Observacao};
 
-                textBoxObservacao.Text = obs.ToString();
+                var statusPedido = from s in context.Pedidos
+                                   select s;
 
-                if (infoMesa.FirstOrDefault() != null)
-                {
-                    Mesas nMesa = (Mesas)infoMesa.FirstOrDefault();
-                    if (nMesa.Id == 1)
-                    {
-
-                    }
-                }
+                comboBoxStatusPedido.DataSource = statusPedido.ToList();
             }
         }
 

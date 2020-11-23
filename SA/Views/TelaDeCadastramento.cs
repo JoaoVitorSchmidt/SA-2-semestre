@@ -17,6 +17,7 @@ namespace SA.Views
             buttonSalvarCadastro.Click += salvar;
         }
 
+        //Esse metódo vai salvar as informações cadastradas no banco de dados.
         private void salvar(object sender, EventArgs e)
         {
             Cadastro cad = new Cadastro();

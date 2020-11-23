@@ -1,4 +1,5 @@
 using SA.Views;
+using SA.Views.Cozinheiro;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace SA
         {
             //<TargetFrameworks>netcoreapeworks>Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaDeGerenciamentoDeMesas());
+            Application.Run(new Estoque());
         }
     }
 }

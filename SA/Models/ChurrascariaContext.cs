@@ -16,6 +16,7 @@ namespace SA.Models
         }
 
         public virtual DbSet<Cadastro> Cadastro { get; set; }
+        public virtual DbSet<Estoque> Estoque { get; set; }
         public virtual DbSet<Mesas> Mesas { get; set; }
         public virtual DbSet<Pedidos> Pedidos { get; set; }
 
@@ -115,6 +116,33 @@ namespace SA.Models
                     .HasCollation("utf8mb4_general_ci");
             });
 
+            modelBuilder.Entity<Estoque>(entity =>
+            {
+                entity.ToTable("estoque");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("int(2)");
+
+                entity.Property(e => e.Identificacao)
+                    .HasColumnName("IDENTIFICACAO")
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.QuantidadeKg)
+                    .HasColumnName("QUANTIDADE_KG")
+                    .HasColumnType("decimal(10,2)");
+
+                entity.Property(e => e.ValorKg)
+                    .HasColumnName("VALOR_KG")
+                    .HasColumnType("decimal(10,2)");
+
+                entity.Property(e => e.ValorTotal)
+                    .HasColumnName("VALOR_TOTAL")
+                    .HasColumnType("decimal(10,2)");
+            });
+
             modelBuilder.Entity<Mesas>(entity =>
             {
                 entity.ToTable("mesas");
@@ -150,6 +178,12 @@ namespace SA.Models
                     .HasColumnName("ID")
                     .HasColumnType("int(2)");
 
+                entity.Property(e => e.Itenspedido)
+                    .HasColumnName("ITENSPEDIDO")
+                    .HasColumnType("varchar(100)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
                 entity.Property(e => e.Observacao)
                     .HasColumnName("OBSERVACAO")
                     .HasColumnType("varchar(40)")
@@ -158,7 +192,7 @@ namespace SA.Models
 
                 entity.Property(e => e.Status)
                     .HasColumnName("STATUS")
-                    .HasColumnType("varchar(10)")
+                    .HasColumnType("varchar(20)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 

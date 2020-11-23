@@ -29,91 +29,82 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estoque));
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBoxIdentificacao = new System.Windows.Forms.TextBox();
+            this.textBoxValorUnit = new System.Windows.Forms.TextBox();
+            this.textBoxQuantidadeKg = new System.Windows.Forms.TextBox();
+            this.buttonPedidos = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonAdiocionar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelValorUnit = new System.Windows.Forms.Label();
+            this.labelQuantKg = new System.Windows.Forms.Label();
+            this.dataGridViewEstoque = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // textBoxIdentificacao
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(155, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(508, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Local da tabela, que não botei por não saber o que botar";
+            this.textBoxIdentificacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxIdentificacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxIdentificacao.Location = new System.Drawing.Point(66, 326);
+            this.textBoxIdentificacao.Name = "textBoxIdentificacao";
+            this.textBoxIdentificacao.Size = new System.Drawing.Size(166, 29);
+            this.textBoxIdentificacao.TabIndex = 2;
             // 
-            // textBox1
+            // textBoxValorUnit
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(70, 294);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 29);
-            this.textBox1.TabIndex = 2;
+            this.textBoxValorUnit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxValorUnit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxValorUnit.Location = new System.Drawing.Point(309, 326);
+            this.textBoxValorUnit.Name = "textBoxValorUnit";
+            this.textBoxValorUnit.Size = new System.Drawing.Size(166, 29);
+            this.textBoxValorUnit.TabIndex = 2;
             // 
-            // textBox2
+            // textBoxQuantidadeKg
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(313, 294);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 29);
-            this.textBox2.TabIndex = 2;
+            this.textBoxQuantidadeKg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxQuantidadeKg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxQuantidadeKg.Location = new System.Drawing.Point(568, 326);
+            this.textBoxQuantidadeKg.Name = "textBoxQuantidadeKg";
+            this.textBoxQuantidadeKg.Size = new System.Drawing.Size(166, 29);
+            this.textBoxQuantidadeKg.TabIndex = 2;
             // 
-            // textBox3
+            // buttonPedidos
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(572, 294);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 29);
-            this.textBox3.TabIndex = 2;
+            this.buttonPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonPedidos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonPedidos.Location = new System.Drawing.Point(66, 404);
+            this.buttonPedidos.Name = "buttonPedidos";
+            this.buttonPedidos.Size = new System.Drawing.Size(166, 29);
+            this.buttonPedidos.TabIndex = 3;
+            this.buttonPedidos.Text = "Pedidos";
+            this.buttonPedidos.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonEditar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(70, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Início";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonEditar.Location = new System.Drawing.Point(309, 404);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(166, 29);
+            this.buttonEditar.TabIndex = 3;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonAdiocionar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button2.Location = new System.Drawing.Point(313, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 29);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button3.Location = new System.Drawing.Point(572, 372);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Adicionar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonAdiocionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonAdiocionar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAdiocionar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonAdiocionar.Location = new System.Drawing.Point(568, 404);
+            this.buttonAdiocionar.Name = "buttonAdiocionar";
+            this.buttonAdiocionar.Size = new System.Drawing.Size(166, 29);
+            this.buttonAdiocionar.TabIndex = 3;
+            this.buttonAdiocionar.Text = "Adicionar";
+            this.buttonAdiocionar.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -121,35 +112,56 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label2.Location = new System.Drawing.Point(73, 271);
+            this.label2.Location = new System.Drawing.Point(69, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 21);
+            this.label2.Size = new System.Drawing.Size(97, 21);
             this.label2.TabIndex = 4;
-            this.label2.Text = "ID";
+            this.label2.Text = "Identificação";
             // 
-            // label3
+            // labelValorUnit
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label3.Location = new System.Drawing.Point(313, 270);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 21);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Nome";
+            this.labelValorUnit.AutoSize = true;
+            this.labelValorUnit.BackColor = System.Drawing.Color.Transparent;
+            this.labelValorUnit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelValorUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelValorUnit.Location = new System.Drawing.Point(309, 302);
+            this.labelValorUnit.Name = "labelValorUnit";
+            this.labelValorUnit.Size = new System.Drawing.Size(106, 21);
+            this.labelValorUnit.TabIndex = 4;
+            this.labelValorUnit.Text = "Valor Unitário";
             // 
-            // label4
+            // labelQuantKg
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label4.Location = new System.Drawing.Point(572, 270);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 21);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Quantidade";
+            this.labelQuantKg.AutoSize = true;
+            this.labelQuantKg.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuantKg.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelQuantKg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelQuantKg.Location = new System.Drawing.Point(568, 302);
+            this.labelQuantKg.Name = "labelQuantKg";
+            this.labelQuantKg.Size = new System.Drawing.Size(141, 21);
+            this.labelQuantKg.TabIndex = 4;
+            this.labelQuantKg.Text = "Quantidade por Kg";
+            // 
+            // dataGridViewEstoque
+            // 
+            this.dataGridViewEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEstoque.Location = new System.Drawing.Point(66, 44);
+            this.dataGridViewEstoque.Name = "dataGridViewEstoque";
+            this.dataGridViewEstoque.RowTemplate.Height = 25;
+            this.dataGridViewEstoque.Size = new System.Drawing.Size(668, 246);
+            this.dataGridViewEstoque.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.label1.Location = new System.Drawing.Point(328, -5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 46);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Estoque";
             // 
             // Estoque
             // 
@@ -157,35 +169,37 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridViewEstoque);
+            this.Controls.Add(this.labelQuantKg);
+            this.Controls.Add(this.labelValorUnit);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.buttonAdiocionar);
+            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.buttonPedidos);
+            this.Controls.Add(this.textBoxQuantidadeKg);
+            this.Controls.Add(this.textBoxValorUnit);
+            this.Controls.Add(this.textBoxIdentificacao);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Estoque";
             this.Text = "Estoque";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBoxIdentificacao;
+        private System.Windows.Forms.TextBox textBoxValorUnit;
+        private System.Windows.Forms.TextBox textBoxQuantidadeKg;
+        private System.Windows.Forms.Button buttonPedidos;
+        private System.Windows.Forms.Button buttonEditar;
+        private System.Windows.Forms.Button buttonAdiocionar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelValorUnit;
+        private System.Windows.Forms.Label labelQuantKg;
+        private System.Windows.Forms.DataGridView dataGridViewEstoque;
+        private System.Windows.Forms.Label label1;
     }
 }

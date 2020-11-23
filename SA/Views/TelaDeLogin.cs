@@ -20,7 +20,7 @@ namespace SA.Views
             buttonEntrar.Click += entrar;
             buttonTelaCadastrar.Click += telaCadastrar;
         }
-
+        //Este metódo vai fazer a verificação dos dados no banco de dados, pra ver se o Nome e a Senha estão corretos.
         private void entrar(object sender, EventArgs e)
         {
             var nome = textBoxNome1.Text;
@@ -59,7 +59,7 @@ namespace SA.Views
                 }
             }
         }
-
+        //Esse metódo vai abrir a tela de cadastramento, caso o buttonTelaCadastrar seja clicado.
         private void telaCadastrar(object sender, EventArgs e)
         {
             new TelaDeCadastramentoFuncionários().Show();

@@ -29,58 +29,72 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.buttonEstoque = new System.Windows.Forms.Button();
+            this.buttonTelaDeInicio = new System.Windows.Forms.Button();
+            this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
+            this.labelPedido = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonEstoque
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(206, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Estoque";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonEstoque.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonEstoque.Location = new System.Drawing.Point(225, 311);
+            this.buttonEstoque.Name = "buttonEstoque";
+            this.buttonEstoque.Size = new System.Drawing.Size(150, 40);
+            this.buttonEstoque.TabIndex = 0;
+            this.buttonEstoque.Text = "Estoque";
+            this.buttonEstoque.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonTelaDeInicio
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button2.Location = new System.Drawing.Point(418, 384);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Tela de Início";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonTelaDeInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonTelaDeInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTelaDeInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonTelaDeInicio.Location = new System.Drawing.Point(443, 311);
+            this.buttonTelaDeInicio.Name = "buttonTelaDeInicio";
+            this.buttonTelaDeInicio.Size = new System.Drawing.Size(150, 40);
+            this.buttonTelaDeInicio.TabIndex = 0;
+            this.buttonTelaDeInicio.Text = "Tela de Início";
+            this.buttonTelaDeInicio.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // dataGridViewPedidos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(138, 146);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(508, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Local da tabela, que não botei por não saber o que botar";
+            this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedidos.Location = new System.Drawing.Point(12, 63);
+            this.dataGridViewPedidos.Name = "dataGridViewPedidos";
+            this.dataGridViewPedidos.RowTemplate.Height = 25;
+            this.dataGridViewPedidos.Size = new System.Drawing.Size(776, 236);
+            this.dataGridViewPedidos.TabIndex = 1;
+            // 
+            // labelPedido
+            // 
+            this.labelPedido.AutoSize = true;
+            this.labelPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.labelPedido.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.labelPedido.Location = new System.Drawing.Point(324, 5);
+            this.labelPedido.Name = "labelPedido";
+            this.labelPedido.Size = new System.Drawing.Size(172, 54);
+            this.labelPedido.TabIndex = 2;
+            this.labelPedido.Text = "Pedidos";
             // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(800, 363);
+            this.Controls.Add(this.labelPedido);
+            this.Controls.Add(this.dataGridViewPedidos);
+            this.Controls.Add(this.buttonTelaDeInicio);
+            this.Controls.Add(this.buttonEstoque);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedidos";
             this.Text = "Pedidos";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,8 +102,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonEstoque;
+        private System.Windows.Forms.Button buttonTelaDeInicio;
+        private System.Windows.Forms.DataGridView dataGridViewPedidos;
+        private System.Windows.Forms.Label labelPedido;
     }
 }
