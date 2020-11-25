@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeBebidas));
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxBebidas = new System.Windows.Forms.CheckedListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonFecharPedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // checkedListBox1
+            // checkedListBoxBebidas
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.checkedListBoxBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.checkedListBoxBebidas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBoxBebidas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkedListBoxBebidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.checkedListBoxBebidas.FormattingEnabled = true;
+            this.checkedListBoxBebidas.Items.AddRange(new object[] {
             "Água Mineral s/gás | R$ 4,00 ",
             "Água Mineral c/gás| R$ 4,00",
             "Refrigerante 350 ml | R$ 3,50",
@@ -54,10 +54,10 @@
             "Torre de Chop 1,5L | R$ 25,00",
             "Torre de Chop 2L | R$ 35,00",
             "Suco 500 ml | R$ 5,00"});
-            this.checkedListBox1.Location = new System.Drawing.Point(244, 91);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(424, 264);
-            this.checkedListBox1.TabIndex = 0;
+            this.checkedListBoxBebidas.Location = new System.Drawing.Point(244, 91);
+            this.checkedListBoxBebidas.Name = "checkedListBoxBebidas";
+            this.checkedListBoxBebidas.Size = new System.Drawing.Size(424, 264);
+            this.checkedListBoxBebidas.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -69,17 +69,17 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // buttonFecharPedido
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(520, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Fechar Pedido";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonFecharPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonFecharPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonFecharPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonFecharPedido.Location = new System.Drawing.Point(520, 204);
+            this.buttonFecharPedido.Name = "buttonFecharPedido";
+            this.buttonFecharPedido.Size = new System.Drawing.Size(129, 41);
+            this.buttonFecharPedido.TabIndex = 2;
+            this.buttonFecharPedido.Text = "Fechar Pedido";
+            this.buttonFecharPedido.UseVisualStyleBackColor = false;
             // 
             // TelaDeBebidas
             // 
@@ -87,9 +87,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonFecharPedido);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.checkedListBoxBebidas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaDeBebidas";
             this.Text = "Bebidas";
@@ -100,8 +100,8 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBoxBebidas;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFecharPedido;
     }
 }

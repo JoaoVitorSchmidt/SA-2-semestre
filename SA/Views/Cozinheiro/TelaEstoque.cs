@@ -28,6 +28,13 @@ namespace SA.Views.Cozinheiro
             es.Identificacao = textBoxIdentificacao.Text;
             es.QuantidadeKg = decimal.Parse(textBoxQuantidadeKg.Text);
             es.ValorKg = decimal.Parse(textBoxValorUnit.Text);
+
+            using (var context = new churrascariaContext())
+            {
+                context.Estoque.Add(es);
+                context.SaveChanges();
+                MessageBox.Show("Adicionado com Sucesso!");
+            }
         }
 
         //Metódo para mostrar as informações nas textBoxs, ao clicar em um certo registro.

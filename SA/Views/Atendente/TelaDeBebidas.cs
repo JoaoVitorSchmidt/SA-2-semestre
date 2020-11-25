@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SA.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,19 @@ namespace SA.Views
         public TelaDeBebidas()
         {
             InitializeComponent();
+            buttonFecharPedido.Click += bebidasSelecionadas;
+        }
+
+        private void bebidasSelecionadas(object sender, EventArgs e)
+        {
+            Pedidos bebidas = new Pedidos();
+            bebidas.Itenspedido = bebidas.Itenspedido + checkedListBoxBebidas.CheckedItems.ToString() + ", ";
+
+            using (var context = new churrascariaContext())
+            {
+                context.Pedidos.Add(bebidas);
+                context.SaveChanges();
+            }
         }
     }
 }
