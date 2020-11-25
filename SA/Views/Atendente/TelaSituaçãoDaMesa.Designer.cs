@@ -35,10 +35,11 @@
             this.labelStatsPedido = new System.Windows.Forms.Label();
             this.labelObs = new System.Windows.Forms.Label();
             this.labelStatsMesa = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.nmrMesaTXT = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,17 +113,17 @@
             this.labelStatsMesa.TabIndex = 11;
             this.labelStatsMesa.Text = "Status da Mesa:";
             // 
-            // label5
+            // nmrMesaTXT
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label5.Location = new System.Drawing.Point(462, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 30);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "label1";
+            this.nmrMesaTXT.AutoSize = true;
+            this.nmrMesaTXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
+            this.nmrMesaTXT.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nmrMesaTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.nmrMesaTXT.Location = new System.Drawing.Point(462, 36);
+            this.nmrMesaTXT.Name = "nmrMesaTXT";
+            this.nmrMesaTXT.Size = new System.Drawing.Size(71, 30);
+            this.nmrMesaTXT.TabIndex = 11;
+            this.nmrMesaTXT.Text = "label1";
             // 
             // label6
             // 
@@ -160,16 +161,27 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "label1";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(609, 199);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.TabIndex = 12;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // Situação_da_Mesa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(718, 262);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nmrMesaTXT);
             this.Controls.Add(this.labelStatsMesa);
             this.Controls.Add(this.labelObs);
             this.Controls.Add(this.labelStatsPedido);
@@ -192,10 +204,11 @@
         private System.Windows.Forms.Label labelStatsPedido;
         private System.Windows.Forms.Label labelObs;
         private System.Windows.Forms.Label labelStatsMesa;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label nmrMesaTXT;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label esa;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

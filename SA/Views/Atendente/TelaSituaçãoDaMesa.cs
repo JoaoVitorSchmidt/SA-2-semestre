@@ -15,5 +15,16 @@ namespace SA.Views
             InitializeComponent();
             buttonFundo.Enabled = false;
         }
+        public Situação_da_Mesa(string mesa)
+        {
+            InitializeComponent();
+            nmrMesaTXT.Text = mesa;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            new TelaDePanoramaDasMesas().Show();
+            this.Visible = false;
+        }
     }
 }
