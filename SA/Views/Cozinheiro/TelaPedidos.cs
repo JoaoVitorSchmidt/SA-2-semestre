@@ -10,9 +10,9 @@ using System.Linq;
 
 namespace SA.Views.Cozinheiro
 {
-    public partial class Pedidos : Form
+    public partial class TelaPedidos : Form
     {
-        public Pedidos()
+        public TelaPedidos()
         {
             InitializeComponent();
             carregaInformacoes();

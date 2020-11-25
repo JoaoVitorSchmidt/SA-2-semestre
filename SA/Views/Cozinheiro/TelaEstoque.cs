@@ -10,18 +10,18 @@ using SA.Models;
 
 namespace SA.Views.Cozinheiro
 {
-    public partial class Estoque : Form
+    public partial class TelaEstoque : Form
     {
-        public Estoque()
+        public TelaEstoque()
         {
             InitializeComponent();
             carregarInformacoes();
             buttonEditar.Click += editar;
-            buttonAdiocionar.Click += adicionar;
+            buttonAdicionar.Click += adicionar;
             dataGridViewEstoque.CellClick += mostrarInformacoes;
         }
 
-        //
+        //Metódo para adicionar informações ao banco de dados, ao clicar o buttonAdicinar.
         private void adicionar(object sender, EventArgs e)
         {
             Estoque es = new Estoque();
@@ -44,8 +44,8 @@ namespace SA.Views.Cozinheiro
         {
             Estoque editar = (Estoque)dataGridViewEstoque.CurrentRow.DataBoundItem;
             editar.Identificacao = textBoxIdentificacao.Text;
-            editar.QuantidadeKg = textBoxQuantidadeKg.Text;
-            editar.ValorKg = textBoxValorUnit.Text;
+            editar.QuantidadeKg = decimal.Parse(textBoxQuantidadeKg.Text);
+            editar.ValorKg = decimal.Parse(textBoxValorUnit.Text);
 
             using (var context = new churrascariaContext())
             {

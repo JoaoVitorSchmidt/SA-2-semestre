@@ -1,6 +1,6 @@
 ﻿namespace SA.Views.Cozinheiro
 {
-    partial class Estoque
+    partial class TelaEstoque
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estoque));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaEstoque));
             this.textBoxIdentificacao = new System.Windows.Forms.TextBox();
             this.textBoxValorUnit = new System.Windows.Forms.TextBox();
             this.textBoxQuantidadeKg = new System.Windows.Forms.TextBox();
             this.buttonPedidos = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
-            this.buttonAdiocionar = new System.Windows.Forms.Button();
+            this.buttonAdicionar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.labelValorUnit = new System.Windows.Forms.Label();
             this.labelQuantKg = new System.Windows.Forms.Label();
@@ -94,17 +94,17 @@
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = false;
             // 
-            // buttonAdiocionar
+            // buttonAdicionar
             // 
-            this.buttonAdiocionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.buttonAdiocionar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonAdiocionar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonAdiocionar.Location = new System.Drawing.Point(568, 404);
-            this.buttonAdiocionar.Name = "buttonAdiocionar";
-            this.buttonAdiocionar.Size = new System.Drawing.Size(166, 29);
-            this.buttonAdiocionar.TabIndex = 3;
-            this.buttonAdiocionar.Text = "Adicionar";
-            this.buttonAdiocionar.UseVisualStyleBackColor = false;
+            this.buttonAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonAdicionar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAdicionar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonAdicionar.Location = new System.Drawing.Point(568, 404);
+            this.buttonAdicionar.Name = "buttonAdicionar";
+            this.buttonAdicionar.Size = new System.Drawing.Size(166, 29);
+            this.buttonAdicionar.TabIndex = 3;
+            this.buttonAdicionar.Text = "Adicionar";
+            this.buttonAdicionar.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -174,7 +174,7 @@
             this.Controls.Add(this.labelQuantKg);
             this.Controls.Add(this.labelValorUnit);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.buttonAdiocionar);
+            this.Controls.Add(this.buttonAdicionar);
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonPedidos);
             this.Controls.Add(this.textBoxQuantidadeKg);
@@ -195,7 +195,7 @@
         private System.Windows.Forms.TextBox textBoxQuantidadeKg;
         private System.Windows.Forms.Button buttonPedidos;
         private System.Windows.Forms.Button buttonEditar;
-        private System.Windows.Forms.Button buttonAdiocionar;
+        private System.Windows.Forms.Button buttonAdicionar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelValorUnit;
         private System.Windows.Forms.Label labelQuantKg;

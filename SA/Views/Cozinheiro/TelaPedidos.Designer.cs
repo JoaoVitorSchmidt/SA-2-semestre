@@ -1,6 +1,6 @@
 ﻿namespace SA.Views.Cozinheiro
 {
-    partial class Pedidos
+    partial class TelaPedidos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPedidos));
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.buttonTelaDeInicio = new System.Windows.Forms.Button();
             this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();

@@ -19,6 +19,14 @@ namespace SA.Views
             buttonFundo.Enabled = false;
             buttonEditar.Click += editar;
             buttonVoltar.Click += voltar;
+            comboBoxNumMesa.TextChanged += informacoes;
+        }
+
+        private void informacoes(object sender, EventArgs e)
+        {
+            Mesas selecionado = (Mesas)comboBoxNumMesa.SelectedItem;
+            textBoxObservacao.Text = selecionado.Observacao;
+            comboBoxStatus.Text = selecionado.Status;
         }
 
         private void voltar(object sender, EventArgs e)
@@ -29,18 +37,16 @@ namespace SA.Views
 
         private void carregarInformacoes()
         {
+            Mesas mesaSelecionada = (Mesas)comboBoxNumMesa.SelectedItem;
+
             using (var context = new churrascariaContext())
             {
                 var mesas = from m in context.Mesas
-                            select m;
+                            where m.Id == mesaSelecionada.Id
+                            select new Mesas {Id = m.Id, Nomemesa = m.Nomemesa, Observacao = m.Observacao, Status = m.Status };
 
                 comboBoxNumMesa.DataSource = mesas.ToList();
-
-
-                var statusPedido = from s in context.Pedidos
-                                   select s;
-
-                comboBoxStatusPedido.DataSource = statusPedido.ToList();
+                comboBoxStatus.DataSource = mesas.ToList();
             }
         }
 
