@@ -13,11 +13,18 @@ namespace SA.Views
         public TelaDeCardapio()
         {
             InitializeComponent();
+            buttonEspClassico.Click += EspetoClassico;
+            buttonEspEspecial.Click += EspetoEspecial;
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void EspetoEspecial(object sender, EventArgs e)
         {
+            
+        }
 
+        private void EspetoClassico(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

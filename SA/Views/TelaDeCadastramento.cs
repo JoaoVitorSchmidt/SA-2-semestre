@@ -15,7 +15,6 @@ namespace SA.Views
         {
             InitializeComponent();
             buttonSalvarCadastro.Click += salvar;
-            Application.Run =
         }
 
         //Esse metódo vai salvar as informações cadastradas no banco de dados.
