@@ -105,6 +105,7 @@
             this.buttonInicio.TabIndex = 6;
             this.buttonInicio.Text = "Início";
             this.buttonInicio.UseVisualStyleBackColor = false;
+            this.buttonInicio.Click += new System.EventHandler(this.buttonInicio_Click);
             // 
             // buttonGerenciamentoDasMesas
             // 
@@ -117,6 +118,7 @@
             this.buttonGerenciamentoDasMesas.TabIndex = 6;
             this.buttonGerenciamentoDasMesas.Text = "Gerenciamento das Mesas";
             this.buttonGerenciamentoDasMesas.UseVisualStyleBackColor = false;
+            this.buttonGerenciamentoDasMesas.Click += new System.EventHandler(this.buttonGerenciamentoDasMesas_Click);
             // 
             // buttonMesa1
             // 
@@ -131,6 +133,7 @@
             this.buttonMesa1.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa1.TabIndex = 6;
             this.buttonMesa1.UseVisualStyleBackColor = false;
+            this.buttonMesa1.Click += new System.EventHandler(this.buttonMesa1_Click);
             // 
             // labelMesa1
             // 
@@ -157,6 +160,7 @@
             this.buttonMesa3.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa3.TabIndex = 6;
             this.buttonMesa3.UseVisualStyleBackColor = false;
+            this.buttonMesa3.Click += new System.EventHandler(this.buttonMesa3_Click);
             // 
             // buttonMesa2
             // 
@@ -171,6 +175,7 @@
             this.buttonMesa2.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa2.TabIndex = 6;
             this.buttonMesa2.UseVisualStyleBackColor = false;
+            this.buttonMesa2.Click += new System.EventHandler(this.buttonMesa2_Click);
             // 
             // buttonMesa4
             // 
@@ -185,6 +190,7 @@
             this.buttonMesa4.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa4.TabIndex = 6;
             this.buttonMesa4.UseVisualStyleBackColor = false;
+            this.buttonMesa4.Click += new System.EventHandler(this.buttonMesa4_Click);
             // 
             // buttonMesa5
             // 
@@ -199,6 +205,7 @@
             this.buttonMesa5.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa5.TabIndex = 6;
             this.buttonMesa5.UseVisualStyleBackColor = false;
+            this.buttonMesa5.Click += new System.EventHandler(this.buttonMesa5_Click);
             // 
             // buttonMesa6
             // 
@@ -213,6 +220,7 @@
             this.buttonMesa6.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa6.TabIndex = 6;
             this.buttonMesa6.UseVisualStyleBackColor = false;
+            this.buttonMesa6.Click += new System.EventHandler(this.buttonMesa6_Click);
             // 
             // buttonMesa7
             // 
@@ -227,6 +235,7 @@
             this.buttonMesa7.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa7.TabIndex = 6;
             this.buttonMesa7.UseVisualStyleBackColor = false;
+            this.buttonMesa7.Click += new System.EventHandler(this.buttonMesa7_Click);
             // 
             // buttonMesa8
             // 
@@ -241,6 +250,7 @@
             this.buttonMesa8.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa8.TabIndex = 6;
             this.buttonMesa8.UseVisualStyleBackColor = false;
+            this.buttonMesa8.Click += new System.EventHandler(this.buttonMesa8_Click);
             // 
             // buttonMesa9
             // 
@@ -255,6 +265,7 @@
             this.buttonMesa9.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa9.TabIndex = 6;
             this.buttonMesa9.UseVisualStyleBackColor = false;
+            this.buttonMesa9.Click += new System.EventHandler(this.buttonMesa9_Click);
             // 
             // buttonMesa10
             // 
@@ -269,6 +280,7 @@
             this.buttonMesa10.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa10.TabIndex = 6;
             this.buttonMesa10.UseVisualStyleBackColor = false;
+            this.buttonMesa10.Click += new System.EventHandler(this.buttonMesa10_Click);
             // 
             // buttonMesa11
             // 
@@ -283,6 +295,7 @@
             this.buttonMesa11.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa11.TabIndex = 6;
             this.buttonMesa11.UseVisualStyleBackColor = false;
+            this.buttonMesa11.Click += new System.EventHandler(this.buttonMesa11_Click);
             // 
             // buttonMesa12
             // 
@@ -297,6 +310,7 @@
             this.buttonMesa12.Size = new System.Drawing.Size(99, 93);
             this.buttonMesa12.TabIndex = 6;
             this.buttonMesa12.UseVisualStyleBackColor = false;
+            this.buttonMesa12.Click += new System.EventHandler(this.buttonMesa12_Click);
             // 
             // labelMesa2
             // 
