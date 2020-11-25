@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPedidos));
-            this.buttonEstoque = new System.Windows.Forms.Button();
-            this.buttonTelaDeInicio = new System.Windows.Forms.Button();
+            this.btnEstoque = new System.Windows.Forms.Button();
+            this.btnTelaInicio = new System.Windows.Forms.Button();
             this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
             this.labelPedido = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonEstoque
+            // btnEstoque
             // 
-            this.buttonEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.buttonEstoque.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonEstoque.Location = new System.Drawing.Point(225, 311);
-            this.buttonEstoque.Name = "buttonEstoque";
-            this.buttonEstoque.Size = new System.Drawing.Size(150, 40);
-            this.buttonEstoque.TabIndex = 0;
-            this.buttonEstoque.Text = "Estoque";
-            this.buttonEstoque.UseVisualStyleBackColor = false;
+            this.btnEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.btnEstoque.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnEstoque.Location = new System.Drawing.Point(225, 311);
+            this.btnEstoque.Name = "btnEstoque";
+            this.btnEstoque.Size = new System.Drawing.Size(150, 40);
+            this.btnEstoque.TabIndex = 0;
+            this.btnEstoque.Text = "Estoque";
+            this.btnEstoque.UseVisualStyleBackColor = false;
             // 
-            // buttonTelaDeInicio
+            // btnTelaInicio
             // 
-            this.buttonTelaDeInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.buttonTelaDeInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTelaDeInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonTelaDeInicio.Location = new System.Drawing.Point(443, 311);
-            this.buttonTelaDeInicio.Name = "buttonTelaDeInicio";
-            this.buttonTelaDeInicio.Size = new System.Drawing.Size(150, 40);
-            this.buttonTelaDeInicio.TabIndex = 0;
-            this.buttonTelaDeInicio.Text = "Tela de Início";
-            this.buttonTelaDeInicio.UseVisualStyleBackColor = false;
+            this.btnTelaInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.btnTelaInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTelaInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnTelaInicio.Location = new System.Drawing.Point(443, 311);
+            this.btnTelaInicio.Name = "btnTelaInicio";
+            this.btnTelaInicio.Size = new System.Drawing.Size(150, 40);
+            this.btnTelaInicio.TabIndex = 0;
+            this.btnTelaInicio.Text = "Tela de Início";
+            this.btnTelaInicio.UseVisualStyleBackColor = false;
             // 
             // dataGridViewPedidos
             // 
@@ -81,7 +81,7 @@
             this.labelPedido.TabIndex = 2;
             this.labelPedido.Text = "Pedidos";
             // 
-            // Pedidos
+            // TelaPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,10 +89,10 @@
             this.ClientSize = new System.Drawing.Size(800, 363);
             this.Controls.Add(this.labelPedido);
             this.Controls.Add(this.dataGridViewPedidos);
-            this.Controls.Add(this.buttonTelaDeInicio);
-            this.Controls.Add(this.buttonEstoque);
+            this.Controls.Add(this.btnTelaInicio);
+            this.Controls.Add(this.btnEstoque);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Pedidos";
+            this.Name = "TelaPedidos";
             this.Text = "Pedidos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
             this.ResumeLayout(false);
@@ -102,8 +102,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonEstoque;
-        private System.Windows.Forms.Button buttonTelaDeInicio;
+        private System.Windows.Forms.Button btnEstoque;
+        private System.Windows.Forms.Button btnTelaInicio;
         private System.Windows.Forms.DataGridView dataGridViewPedidos;
         private System.Windows.Forms.Label labelPedido;
     }
