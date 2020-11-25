@@ -18,7 +18,7 @@ namespace SA
         {
             //<TargetFrameworks>netcoreapeworks>Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaDeInicioCozinheiro());
+            Application.Run(new TelaDeGerenciamentoDeMesas());
         }
     }
 }

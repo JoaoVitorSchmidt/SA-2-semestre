@@ -34,11 +34,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -46,6 +44,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.buttonEspClassico = new System.Windows.Forms.Button();
+            this.buttonEspEspecial = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -103,18 +103,6 @@
             this.label6.Size = new System.Drawing.Size(211, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "Espeto corrido com cortes de";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(238, 102);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(19, 22);
-            this.checkedListBox1.TabIndex = 9;
             // 
             // label7
             // 
@@ -126,7 +114,6 @@
             this.label7.Size = new System.Drawing.Size(167, 21);
             this.label7.TabIndex = 8;
             this.label7.Text = "carnes especiais, como";
-            this.label7.Click += new System.EventHandler(this.label6_Click);
             // 
             // label8
             // 
@@ -138,7 +125,6 @@
             this.label8.Size = new System.Drawing.Size(187, 21);
             this.label8.TabIndex = 8;
             this.label8.Text = "costela, picanha, cordeiro,";
-            this.label8.Click += new System.EventHandler(this.label6_Click);
             // 
             // label9
             // 
@@ -150,18 +136,6 @@
             this.label9.Size = new System.Drawing.Size(205, 21);
             this.label9.TabIndex = 8;
             this.label9.Text = "etc.. e buffet de frios incluso.";
-            this.label9.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // checkedListBox3
-            // 
-            this.checkedListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.checkedListBox3.CheckOnClick = true;
-            this.checkedListBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Location = new System.Drawing.Point(238, 305);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(19, 22);
-            this.checkedListBox3.TabIndex = 9;
             // 
             // pictureBox4
             // 
@@ -205,7 +179,6 @@
             this.label12.Size = new System.Drawing.Size(118, 21);
             this.label12.TabIndex = 8;
             this.label12.Text = "de frios incluso.";
-            this.label12.Click += new System.EventHandler(this.label6_Click);
             // 
             // label13
             // 
@@ -217,7 +190,6 @@
             this.label13.Size = new System.Drawing.Size(210, 21);
             this.label13.TabIndex = 8;
             this.label13.Text = "alcatra, linguiça, etc... e buffet";
-            this.label13.Click += new System.EventHandler(this.label6_Click);
             // 
             // label14
             // 
@@ -229,7 +201,6 @@
             this.label14.Size = new System.Drawing.Size(213, 21);
             this.label14.TabIndex = 8;
             this.label14.Text = "carnes comuns, como frango,";
-            this.label14.Click += new System.EventHandler(this.label6_Click);
             // 
             // label15
             // 
@@ -241,7 +212,30 @@
             this.label15.Size = new System.Drawing.Size(211, 21);
             this.label15.TabIndex = 8;
             this.label15.Text = "Espeto corrido com cortes de";
-            this.label15.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // buttonEspClassico
+            // 
+            this.buttonEspClassico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonEspClassico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEspClassico.BackgroundImage")));
+            this.buttonEspClassico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEspClassico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEspClassico.Location = new System.Drawing.Point(235, 104);
+            this.buttonEspClassico.Name = "buttonEspClassico";
+            this.buttonEspClassico.Size = new System.Drawing.Size(22, 23);
+            this.buttonEspClassico.TabIndex = 10;
+            this.buttonEspClassico.UseVisualStyleBackColor = false;
+            // 
+            // buttonEspEspecial
+            // 
+            this.buttonEspEspecial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonEspEspecial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEspEspecial.BackgroundImage")));
+            this.buttonEspEspecial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEspEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEspEspecial.Location = new System.Drawing.Point(235, 314);
+            this.buttonEspEspecial.Name = "buttonEspEspecial";
+            this.buttonEspEspecial.Size = new System.Drawing.Size(22, 23);
+            this.buttonEspEspecial.TabIndex = 11;
+            this.buttonEspEspecial.UseVisualStyleBackColor = false;
             // 
             // TelaDeCardapio
             // 
@@ -249,6 +243,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.buttonEspEspecial);
+            this.Controls.Add(this.buttonEspClassico);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -256,11 +252,9 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.checkedListBox3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -284,11 +278,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -296,5 +288,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button buttonEspClassico;
+        private System.Windows.Forms.Button buttonEspEspecial;
     }
 }
