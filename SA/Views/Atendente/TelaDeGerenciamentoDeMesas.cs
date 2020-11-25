@@ -24,9 +24,9 @@ namespace SA.Views
 
         private void informacoes(object sender, EventArgs e)
         {
-            Mesas selecionado = (Mesas)comboBoxNumMesa.SelectedItem;
-            textBoxObservacao.Text = selecionado.Observacao;
-            comboBoxStatus.Text = selecionado.Status;
+            Mesas selecionada = (Mesas)comboBoxNumMesa.SelectedItem;
+            textBoxObservacao.Text = selecionada.Observacao;
+            comboBoxStatus.Text = selecionada.Status;
         }
 
         private void voltar(object sender, EventArgs e)
@@ -42,11 +42,9 @@ namespace SA.Views
             using (var context = new churrascariaContext())
             {
                 var mesas = from m in context.Mesas
-                            where m.Id == mesaSelecionada.Id
-                            select new Mesas {Id = m.Id, Nomemesa = m.Nomemesa, Observacao = m.Observacao, Status = m.Status };
+                              select m;
 
                 comboBoxNumMesa.DataSource = mesas.ToList();
-                comboBoxStatus.DataSource = mesas.ToList();
             }
         }
 

@@ -23,7 +23,7 @@ namespace SA.Views
 
         private void BtnGerenMesas_Click(object sender, EventArgs e)
         {
-            new TelaDeGerenciamentoDeMesas().Show();
+            new TelaDePanoramaDasMesas().Show();
             this.Visible = false;
         }
 

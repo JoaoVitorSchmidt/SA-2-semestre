@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeInicioAtendente));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnCadPed = new System.Windows.Forms.Button();
-            this.BtnGerenMesas = new System.Windows.Forms.Button();
+            this.BtnPanMesas = new System.Windows.Forms.Button();
             this.BtnSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,18 +59,18 @@
             this.BtnCadPed.UseVisualStyleBackColor = false;
             this.BtnCadPed.Click += new System.EventHandler(this.BtnCadPed_Click);
             // 
-            // BtnGerenMesas
+            // BtnPanMesas
             // 
-            this.BtnGerenMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.BtnGerenMesas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnGerenMesas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.BtnGerenMesas.Location = new System.Drawing.Point(264, 339);
-            this.BtnGerenMesas.Name = "BtnGerenMesas";
-            this.BtnGerenMesas.Size = new System.Drawing.Size(170, 45);
-            this.BtnGerenMesas.TabIndex = 2;
-            this.BtnGerenMesas.Text = "Geren. de Mesas";
-            this.BtnGerenMesas.UseVisualStyleBackColor = false;
-            this.BtnGerenMesas.Click += new System.EventHandler(this.BtnGerenMesas_Click);
+            this.BtnPanMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.BtnPanMesas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnPanMesas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.BtnPanMesas.Location = new System.Drawing.Point(264, 339);
+            this.BtnPanMesas.Name = "BtnPanMesas";
+            this.BtnPanMesas.Size = new System.Drawing.Size(170, 45);
+            this.BtnPanMesas.TabIndex = 2;
+            this.BtnPanMesas.Text = "Panorama das Mesas";
+            this.BtnPanMesas.UseVisualStyleBackColor = false;
+            this.BtnPanMesas.Click += new System.EventHandler(this.BtnGerenMesas_Click);
             // 
             // BtnSair
             // 
@@ -92,7 +92,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
             this.Controls.Add(this.BtnSair);
-            this.Controls.Add(this.BtnGerenMesas);
+            this.Controls.Add(this.BtnPanMesas);
             this.Controls.Add(this.BtnCadPed);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -108,7 +108,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnCadPed;
-        private System.Windows.Forms.Button BtnGerenMesas;
+        private System.Windows.Forms.Button BtnPanMesas;
         private System.Windows.Forms.Button BtnSair;
     }
 }
