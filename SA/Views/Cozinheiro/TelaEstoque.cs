@@ -19,6 +19,13 @@ namespace SA.Views.Cozinheiro
             buttonEditar.Click += editar;
             buttonAdicionar.Click += adicionar;
             dataGridViewEstoque.CellClick += mostrarInformacoes;
+            btnPedidos.Click += BtnPedidos_Click;
+        }
+
+        private void BtnPedidos_Click(object sender, EventArgs e)
+        {
+            new TelaPedidos().Show();
+            this.Visible = false;
         }
 
         //Metódo para adicionar informações ao banco de dados, ao clicar o buttonAdicinar.

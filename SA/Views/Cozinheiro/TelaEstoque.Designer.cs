@@ -32,7 +32,7 @@
             this.textBoxIdentificacao = new System.Windows.Forms.TextBox();
             this.textBoxValorUnit = new System.Windows.Forms.TextBox();
             this.textBoxQuantidadeKg = new System.Windows.Forms.TextBox();
-            this.buttonPedidos = new System.Windows.Forms.Button();
+            this.btnPedidos = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonAdicionar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,17 +70,17 @@
             this.textBoxQuantidadeKg.Size = new System.Drawing.Size(166, 29);
             this.textBoxQuantidadeKg.TabIndex = 2;
             // 
-            // buttonPedidos
+            // btnPedidos
             // 
-            this.buttonPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.buttonPedidos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonPedidos.Location = new System.Drawing.Point(66, 404);
-            this.buttonPedidos.Name = "buttonPedidos";
-            this.buttonPedidos.Size = new System.Drawing.Size(166, 29);
-            this.buttonPedidos.TabIndex = 3;
-            this.buttonPedidos.Text = "Pedidos";
-            this.buttonPedidos.UseVisualStyleBackColor = false;
+            this.btnPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.btnPedidos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnPedidos.Location = new System.Drawing.Point(66, 404);
+            this.btnPedidos.Name = "btnPedidos";
+            this.btnPedidos.Size = new System.Drawing.Size(166, 29);
+            this.btnPedidos.TabIndex = 3;
+            this.btnPedidos.Text = "Pedidos";
+            this.btnPedidos.UseVisualStyleBackColor = false;
             // 
             // buttonEditar
             // 
@@ -163,7 +163,7 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Estoque";
             // 
-            // Estoque
+            // TelaEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -176,12 +176,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonAdicionar);
             this.Controls.Add(this.buttonEditar);
-            this.Controls.Add(this.buttonPedidos);
+            this.Controls.Add(this.btnPedidos);
             this.Controls.Add(this.textBoxQuantidadeKg);
             this.Controls.Add(this.textBoxValorUnit);
             this.Controls.Add(this.textBoxIdentificacao);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Estoque";
+            this.Name = "TelaEstoque";
             this.Text = "Estoque";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
             this.ResumeLayout(false);
@@ -193,7 +193,7 @@
         private System.Windows.Forms.TextBox textBoxIdentificacao;
         private System.Windows.Forms.TextBox textBoxValorUnit;
         private System.Windows.Forms.TextBox textBoxQuantidadeKg;
-        private System.Windows.Forms.Button buttonPedidos;
+        private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonAdicionar;
         private System.Windows.Forms.Label label2;

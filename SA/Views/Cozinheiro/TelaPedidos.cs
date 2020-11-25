@@ -16,6 +16,20 @@ namespace SA.Views.Cozinheiro
         {
             InitializeComponent();
             carregaInformacoes();
+            btnTelaInicio.Click += BtnTelaInicio_Click;
+            btnEstoque.Click += BtnEstoque_Click;
+        }
+
+        private void BtnEstoque_Click(object sender, EventArgs e)
+        {
+            new TelaEstoque().Show();
+            this.Visible = false;
+        }
+
+        private void BtnTelaInicio_Click(object sender, EventArgs e)
+        {
+            new TelaDeInicioCozinheiro().Show();
+            this.Visible = false;
         }
 
         private void carregaInformacoes()
