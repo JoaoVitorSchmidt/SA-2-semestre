@@ -39,9 +39,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(179, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(167, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(281, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(358, 275);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -51,7 +51,7 @@
             this.btnPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.btnPedidos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.btnPedidos.Location = new System.Drawing.Point(36, 278);
+            this.btnPedidos.Location = new System.Drawing.Point(71, 354);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(158, 37);
             this.btnPedidos.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.btnEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.btnEstoque.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.btnEstoque.Location = new System.Drawing.Point(249, 278);
+            this.btnEstoque.Location = new System.Drawing.Point(284, 354);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(158, 37);
             this.btnEstoque.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.btnSignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.btnSignOut.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.btnSignOut.Location = new System.Drawing.Point(453, 278);
+            this.btnSignOut.Location = new System.Drawing.Point(488, 354);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Size = new System.Drawing.Size(158, 37);
             this.btnSignOut.TabIndex = 3;
@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(652, 328);
+            this.ClientSize = new System.Drawing.Size(704, 441);
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.btnEstoque);
             this.Controls.Add(this.btnPedidos);

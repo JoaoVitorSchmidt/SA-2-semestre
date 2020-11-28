@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace SA.Views
 {
-    public partial class TelaDePedidos : Form
+    public partial class TelaDePagamento : Form
     {
-        public TelaDePedidos()
+        public TelaDePagamento()
         {
             InitializeComponent();
         }

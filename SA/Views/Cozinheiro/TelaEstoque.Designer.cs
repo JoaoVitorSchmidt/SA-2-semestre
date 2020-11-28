@@ -144,10 +144,11 @@
             // 
             // dataGridViewEstoque
             // 
+            this.dataGridViewEstoque.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.dataGridViewEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEstoque.GridColor = System.Drawing.Color.White;
             this.dataGridViewEstoque.Location = new System.Drawing.Point(66, 44);
             this.dataGridViewEstoque.Name = "dataGridViewEstoque";
-            this.dataGridViewEstoque.RowTemplate.Height = 25;
             this.dataGridViewEstoque.Size = new System.Drawing.Size(668, 246);
             this.dataGridViewEstoque.TabIndex = 5;
             // 

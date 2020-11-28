@@ -47,9 +47,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-11, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(242, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(254, 204);
+            this.pictureBox1.Size = new System.Drawing.Size(243, 189);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -73,7 +73,7 @@
             "10",
             "11",
             "12"});
-            this.comboBoxNumMesa.Location = new System.Drawing.Point(260, 81);
+            this.comboBoxNumMesa.Location = new System.Drawing.Point(147, 240);
             this.comboBoxNumMesa.Name = "comboBoxNumMesa";
             this.comboBoxNumMesa.Size = new System.Drawing.Size(130, 29);
             this.comboBoxNumMesa.TabIndex = 1;
@@ -89,7 +89,7 @@
             "Livre",
             "Reservado",
             "A Espera de Limpeza"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(410, 81);
+            this.comboBoxStatus.Location = new System.Drawing.Point(297, 240);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(102, 29);
             this.comboBoxStatus.TabIndex = 2;
@@ -104,7 +104,7 @@
             "Já feito",
             "Esperando Atendente",
             "Mesa Vazia"});
-            this.comboBoxStatusPedido.Location = new System.Drawing.Point(531, 81);
+            this.comboBoxStatusPedido.Location = new System.Drawing.Point(418, 240);
             this.comboBoxStatusPedido.Name = "comboBoxStatusPedido";
             this.comboBoxStatusPedido.Size = new System.Drawing.Size(162, 29);
             this.comboBoxStatusPedido.TabIndex = 3;
@@ -114,7 +114,7 @@
             this.textBoxObservacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.textBoxObservacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.textBoxObservacao.Location = new System.Drawing.Point(260, 150);
+            this.textBoxObservacao.Location = new System.Drawing.Point(147, 309);
             this.textBoxObservacao.Name = "textBoxObservacao";
             this.textBoxObservacao.Size = new System.Drawing.Size(432, 29);
             this.textBoxObservacao.TabIndex = 4;
@@ -124,7 +124,7 @@
             this.buttonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.buttonEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonEditar.Location = new System.Drawing.Point(518, 218);
+            this.buttonEditar.Location = new System.Drawing.Point(405, 377);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(122, 34);
             this.buttonEditar.TabIndex = 5;
@@ -136,7 +136,7 @@
             this.buttonVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.buttonVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonVoltar.Location = new System.Drawing.Point(326, 218);
+            this.buttonVoltar.Location = new System.Drawing.Point(213, 377);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(122, 34);
             this.buttonVoltar.TabIndex = 6;
@@ -149,7 +149,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label2.Location = new System.Drawing.Point(260, 126);
+            this.label2.Location = new System.Drawing.Point(147, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 21);
             this.label2.TabIndex = 8;
@@ -161,7 +161,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label3.Location = new System.Drawing.Point(410, 57);
+            this.label3.Location = new System.Drawing.Point(297, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 21);
             this.label3.TabIndex = 9;
@@ -173,7 +173,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label4.Location = new System.Drawing.Point(531, 59);
+            this.label4.Location = new System.Drawing.Point(418, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 21);
             this.label4.TabIndex = 10;
@@ -185,7 +185,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label5.Location = new System.Drawing.Point(260, 59);
+            this.label5.Location = new System.Drawing.Point(147, 218);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 21);
             this.label5.TabIndex = 11;
@@ -193,11 +193,11 @@
             // 
             // buttonFundo
             // 
-            this.buttonFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(13)))));
+            this.buttonFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.buttonFundo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFundo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFundo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonFundo.Location = new System.Drawing.Point(249, 44);
+            this.buttonFundo.Location = new System.Drawing.Point(136, 203);
             this.buttonFundo.Name = "buttonFundo";
             this.buttonFundo.Size = new System.Drawing.Size(452, 226);
             this.buttonFundo.TabIndex = 6;
@@ -208,7 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(712, 310);
+            this.ClientSize = new System.Drawing.Size(704, 441);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
