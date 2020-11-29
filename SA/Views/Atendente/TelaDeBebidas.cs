@@ -19,13 +19,16 @@ namespace SA.Views
 
         private void bebidasSelecionadas(object sender, EventArgs e)
         {
-            Pedidos bebidas = new Pedidos();
-            bebidas.Itenspedido = bebidas.Itenspedido + checkedListBoxBebidas.CheckedItems.ToString() + ", ";
-
-            using (var context = new churrascariaContext())
+            foreach (var item in checkedListBoxBebidas.CheckedItems)
             {
-                context.Pedidos.Add(bebidas);
-                context.SaveChanges();
+                Pedidos bebidas = new Pedidos();
+                bebidas.Itenspedido = bebidas.Itenspedido + checkedListBoxBebidas.CheckedItems.ToString() + ", ";
+
+                using (var context = new churrascariaContext())
+                {
+                    context.Pedidos.Add(bebidas);
+                    context.SaveChanges();
+                }
             }
         }
     }

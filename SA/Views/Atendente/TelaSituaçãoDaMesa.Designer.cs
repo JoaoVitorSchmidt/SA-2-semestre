@@ -36,11 +36,11 @@
             this.labelObs = new System.Windows.Forms.Label();
             this.labelStatsMesa = new System.Windows.Forms.Label();
             this.nmrMesaTXT = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.statsMesaTxt = new System.Windows.Forms.Label();
+            this.statsPedidoTxt = new System.Windows.Forms.Label();
+            this.observacaoTxt = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonFazerPedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,41 +126,41 @@
             this.nmrMesaTXT.TabIndex = 11;
             this.nmrMesaTXT.Text = "label1";
             // 
-            // label6
+            // statsMesaTxt
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label6.Location = new System.Drawing.Point(280, 260);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 30);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "label1";
+            this.statsMesaTxt.AutoSize = true;
+            this.statsMesaTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.statsMesaTxt.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.statsMesaTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.statsMesaTxt.Location = new System.Drawing.Point(280, 260);
+            this.statsMesaTxt.Name = "statsMesaTxt";
+            this.statsMesaTxt.Size = new System.Drawing.Size(71, 30);
+            this.statsMesaTxt.TabIndex = 11;
+            this.statsMesaTxt.Text = "label1";
             // 
-            // label7
+            // statsPedidoTxt
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label7.Location = new System.Drawing.Point(280, 302);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 30);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "label1";
+            this.statsPedidoTxt.AutoSize = true;
+            this.statsPedidoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.statsPedidoTxt.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.statsPedidoTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.statsPedidoTxt.Location = new System.Drawing.Point(280, 302);
+            this.statsPedidoTxt.Name = "statsPedidoTxt";
+            this.statsPedidoTxt.Size = new System.Drawing.Size(71, 30);
+            this.statsPedidoTxt.TabIndex = 11;
+            this.statsPedidoTxt.Text = "label1";
             // 
-            // label8
+            // observacaoTxt
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.label8.Location = new System.Drawing.Point(235, 344);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 30);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "label1";
+            this.observacaoTxt.AutoSize = true;
+            this.observacaoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.observacaoTxt.Font = new System.Drawing.Font("Segoe UI", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.observacaoTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.observacaoTxt.Location = new System.Drawing.Point(235, 344);
+            this.observacaoTxt.Name = "observacaoTxt";
+            this.observacaoTxt.Size = new System.Drawing.Size(71, 30);
+            this.observacaoTxt.TabIndex = 11;
+            this.observacaoTxt.Text = "label1";
             // 
             // btnVoltar
             // 
@@ -175,18 +175,18 @@
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // button1
+            // buttonFazerPedido
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(508, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 35);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Fazer Pedido";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.buttonFazerPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonFazerPedido.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonFazerPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonFazerPedido.Location = new System.Drawing.Point(508, 302);
+            this.buttonFazerPedido.Name = "buttonFazerPedido";
+            this.buttonFazerPedido.Size = new System.Drawing.Size(130, 35);
+            this.buttonFazerPedido.TabIndex = 12;
+            this.buttonFazerPedido.Text = "Fazer Pedido";
+            this.buttonFazerPedido.UseVisualStyleBackColor = false;
+            this.buttonFazerPedido.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Situação_da_Mesa
             // 
@@ -194,11 +194,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonFazerPedido);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.observacaoTxt);
+            this.Controls.Add(this.statsPedidoTxt);
+            this.Controls.Add(this.statsMesaTxt);
             this.Controls.Add(this.nmrMesaTXT);
             this.Controls.Add(this.labelStatsMesa);
             this.Controls.Add(this.labelObs);
@@ -223,11 +223,11 @@
         private System.Windows.Forms.Label labelObs;
         private System.Windows.Forms.Label labelStatsMesa;
         private System.Windows.Forms.Label nmrMesaTXT;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label statsMesaTxt;
         private System.Windows.Forms.Label esa;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label statsPedidoTxt;
+        private System.Windows.Forms.Label observacaoTxt;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFazerPedido;
     }
 }

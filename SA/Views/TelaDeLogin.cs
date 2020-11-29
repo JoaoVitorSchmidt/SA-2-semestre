@@ -41,7 +41,7 @@ namespace SA.Views
                     Cadastro profissao = (Cadastro) funcionario.FirstOrDefault();
                     if (profissao.Areatrabalho == "Caixa")
                     {
-                        new TelaDeInicioCaixa().Show();
+                        new TelaDePagamento().Show();
                         this.Visible = false;
                     } else if (profissao.Areatrabalho == "Atendente")
                     {

@@ -22,6 +22,7 @@ namespace SA.Views.Cozinheiro
             btnPedidos.Click += BtnPedidos_Click;
         }
 
+        //Este método vai fazer com que ao se clicar no botão pedidos, o mesmo abra a tela de Pedidos.
         private void BtnPedidos_Click(object sender, EventArgs e)
         {
             new TelaPedidos().Show();

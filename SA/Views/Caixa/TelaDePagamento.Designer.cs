@@ -29,58 +29,58 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDePagamento));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonPagar = new System.Windows.Forms.Button();
+            this.buttonSignOut = new System.Windows.Forms.Button();
+            this.dataGridViewPedidosPagamento = new System.Windows.Forms.DataGridView();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidosPagamento)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonPagar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button1.Location = new System.Drawing.Point(274, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Pagamento";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonPagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonPagar.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonPagar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonPagar.Location = new System.Drawing.Point(274, 369);
+            this.buttonPagar.Name = "buttonPagar";
+            this.buttonPagar.Size = new System.Drawing.Size(158, 34);
+            this.buttonPagar.TabIndex = 2;
+            this.buttonPagar.Text = "Pagamento";
+            this.buttonPagar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonSignOut
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.button2.Location = new System.Drawing.Point(490, 369);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sign Out";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonSignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonSignOut.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonSignOut.Location = new System.Drawing.Point(490, 369);
+            this.buttonSignOut.Name = "buttonSignOut";
+            this.buttonSignOut.Size = new System.Drawing.Size(158, 34);
+            this.buttonSignOut.TabIndex = 3;
+            this.buttonSignOut.Text = "Sign Out";
+            this.buttonSignOut.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dataGridViewPedidosPagamento
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(51, 35);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(597, 273);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.Text = "dataGridView1";
+            this.dataGridViewPedidosPagamento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.dataGridViewPedidosPagamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedidosPagamento.GridColor = System.Drawing.Color.White;
+            this.dataGridViewPedidosPagamento.Location = new System.Drawing.Point(51, 35);
+            this.dataGridViewPedidosPagamento.Name = "dataGridViewPedidosPagamento";
+            this.dataGridViewPedidosPagamento.Size = new System.Drawing.Size(597, 273);
+            this.dataGridViewPedidosPagamento.TabIndex = 4;
+            this.dataGridViewPedidosPagamento.Text = "dataGridView1";
             // 
-            // textBox1
+            // textBoxId
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.textBox1.Location = new System.Drawing.Point(51, 369);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 34);
-            this.textBox1.TabIndex = 5;
+            this.textBoxId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.textBoxId.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.textBoxId.Location = new System.Drawing.Point(51, 369);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(158, 34);
+            this.textBoxId.TabIndex = 5;
             // 
             // Label1
             // 
@@ -101,14 +101,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
             this.Controls.Add(this.Label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.dataGridViewPedidosPagamento);
+            this.Controls.Add(this.buttonSignOut);
+            this.Controls.Add(this.buttonPagar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaDePagamento";
             this.Text = "Tela de Pagamento";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidosPagamento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,10 +116,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonPagar;
+        private System.Windows.Forms.Button buttonSignOut;
+        private System.Windows.Forms.DataGridView dataGridViewPedidosPagamento;
+        private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.Label Label1;
     }
 }

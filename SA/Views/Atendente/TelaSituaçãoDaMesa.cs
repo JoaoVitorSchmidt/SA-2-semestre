@@ -14,11 +14,20 @@ namespace SA.Views
         {
             InitializeComponent();
             buttonFundo.Enabled = false;
+            buttonFazerPedido.Visible = false;
+
+            if (statsPedidoTxt.Text == "Esperando Atendente")
+            {
+                buttonFazerPedido.Visible = true;
+            }
         }
-        public Situação_da_Mesa(string mesa)
+        public Situação_da_Mesa(string mesa, string statMesa, string statPedido, string observacao)
         {
             InitializeComponent();
             nmrMesaTXT.Text = mesa;
+            observacaoTxt.Text = observacao;
+            statsMesaTxt.Text = statMesa;
+            statsPedidoTxt.Text = statPedido;
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
