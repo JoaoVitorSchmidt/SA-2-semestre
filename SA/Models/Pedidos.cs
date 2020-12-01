@@ -10,9 +10,5 @@ namespace SA.Models
         public decimal Valor { get; set; }
         public string Observacao { get; set; }
         public string Itenspedido { get; set; }
-        public override string ToString()
-        {
-            return $"{Status}";
-        }
     }
 }

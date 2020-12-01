@@ -11,7 +11,7 @@ namespace SA.Models
         public string Status { get; set; }
         public override string ToString()
         {
-            return $"{Nomemesa}";
+            return $"{Status}";
         }
     }
 }
