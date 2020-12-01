@@ -11,35 +11,14 @@ using System.Linq;
 namespace SA.Views
 {
     public partial class TelaDePanoramaDasMesas : Form
-    {
-        Pedidos p = new Pedidos();
-        Mesas m = new Mesas();
-
+    {   
         int mesa;
-        string statPedido;
-        string statMesa;
-        string observacao;
-
+        
         public TelaDePanoramaDasMesas()
         {
             InitializeComponent();
-            InformacoesSituacaoMesa();
             buttonFundo.Enabled = false;
-        }
-
-        private void InformacoesSituacaoMesa()
-        {
-            mesa = m.Id;
-
-            if (mesa == 2)
-            {
-            }
-
-            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa.ToString(), statMesa, statPedido, observacao);
-            Inf.Show();
-            this.Visible = false;
-        }
-
+        }      
         private void buttonGerenciamentoDasMesas_Click(object sender, EventArgs e)
         {
             new TelaDeGerenciamentoDeMesas().Show();
@@ -54,63 +33,99 @@ namespace SA.Views
 
         private void buttonMesa1_Click(object sender, EventArgs e)
         {
-            m.Id = 1;
-            InformacoesSituacaoMesa();
+            string mesa = "1";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
+            
         }
         private void buttonMesa2_Click(object sender, EventArgs e)
         {
-            m.Id = 2;
-            InformacoesSituacaoMesa();
+            string mesa = "2";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa3_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "3";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa4_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "4";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa5_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "5";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa6_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "6";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa7_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "7";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa8_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "8";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa9_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "9";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa10_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "10";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa11_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "11";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
 
         private void buttonMesa12_Click(object sender, EventArgs e)
         {
-            InformacoesSituacaoMesa();
+            string mesa = "12";
+            Situação_da_Mesa Inf = new Situação_da_Mesa(mesa);
+            Inf.Show();
+            this.Visible = false;
         }
+
     }
 }
