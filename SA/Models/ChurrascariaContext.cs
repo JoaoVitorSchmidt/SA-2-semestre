@@ -149,22 +149,28 @@ namespace SA.Models
 
                 entity.Property(e => e.Id)
                     .HasColumnName("ID")
-                    .HasColumnType("int(4)");
+                    .HasColumnType("int(2)");
 
                 entity.Property(e => e.Nomemesa)
                     .HasColumnName("NOMEMESA")
-                    .HasColumnType("varchar(20)")
+                    .HasColumnType("varchar(15)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.Observacao)
                     .HasColumnName("OBSERVACAO")
-                    .HasColumnType("varchar(30)")
+                    .HasColumnType("varchar(50)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
-                entity.Property(e => e.Status)
-                    .HasColumnName("STATUS")
+                entity.Property(e => e.Statusmesa)
+                    .HasColumnName("STATUSMESA")
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+
+                entity.Property(e => e.Statuspedido)
+                    .HasColumnName("STATUSPEDIDO")
                     .HasColumnType("varchar(20)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
@@ -184,17 +190,9 @@ namespace SA.Models
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
-                entity.Property(e => e.Observacao)
-                    .HasColumnName("OBSERVACAO")
-                    .HasColumnType("varchar(40)")
-                    .HasCharSet("utf8mb4")
-                    .HasCollation("utf8mb4_general_ci");
-
-                entity.Property(e => e.Status)
-                    .HasColumnName("STATUS")
-                    .HasColumnType("varchar(20)")
-                    .HasCharSet("utf8mb4")
-                    .HasCollation("utf8mb4_general_ci");
+                entity.Property(e => e.Numeromesa)
+                    .HasColumnName("NUMEROMESA")
+                    .HasColumnType("int(2)");
 
                 entity.Property(e => e.Valor)
                     .HasColumnName("VALOR")

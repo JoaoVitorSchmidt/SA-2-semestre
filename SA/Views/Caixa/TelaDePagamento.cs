@@ -12,8 +12,6 @@ namespace SA.Views
 {
     public partial class TelaDePagamento : Form
     {
-        private int mostrarID;
-
         public TelaDePagamento()
         {
             InitializeComponent();
@@ -35,9 +33,10 @@ namespace SA.Views
             using (var context = new churrascariaContext())
             {
                 var pedidos = from p in context.Pedidos
-                              select p;
+                              select new Pedidos { Id = p.Id, Itenspedido = p.Itenspedido, Valor = p.Valor };
 
                 dataGridViewPedidosPagamento.DataSource = pedidos.ToList();
+                dataGridViewPedidosPagamento.Columns[3].Visible = false;
             }
         }
 

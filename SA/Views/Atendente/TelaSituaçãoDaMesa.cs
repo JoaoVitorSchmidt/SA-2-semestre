@@ -16,7 +16,11 @@ namespace SA.Views
             buttonFundo.Enabled = false;
             buttonFazerPedido.Visible = false;
 
-            if (statsPedidoTxt.Text == "Esperando Atendente")
+            if (statsPedidoTxt.Text != "Esperando Atendente")
+            {
+                buttonFazerPedido.Visible = false;
+            }
+            else
             {
                 buttonFazerPedido.Visible = true;
             }

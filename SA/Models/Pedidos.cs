@@ -6,13 +6,8 @@ namespace SA.Models
     public partial class Pedidos
     {
         public int Id { get; set; }
-        public string Status { get; set; }
         public decimal Valor { get; set; }
-        public string Observacao { get; set; }
         public string Itenspedido { get; set; }
-        public override string ToString()
-        {
-            return $"{Status}";
-        }
+        public int Numeromesa { get; set; }
     }
 }

@@ -33,9 +33,6 @@ namespace SA.Views
 
             if (mesa == 2)
             {
-                statPedido = p.Status;
-                statMesa = m.Status;
-                observacao = m.Observacao;
             }
 
             Situação_da_Mesa Inf = new Situação_da_Mesa(mesa.ToString(), statMesa, statPedido, observacao);

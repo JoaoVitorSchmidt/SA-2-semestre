@@ -15,18 +15,18 @@ namespace SA.Views
         public TelaDeGerenciamentoDeMesas()
         {
             InitializeComponent();
-            carregarInformacoes();
+            carregarInformacoesMesa();
             buttonFundo.Enabled = false;
             buttonEditar.Click += editar;
             buttonVoltar.Click += voltar;
-            comboBoxNumMesa.TextChanged += informacoes;
+            comboBoxNumMesa.TextChanged += informacoesMesa;
         }
-
-        private void informacoes(object sender, EventArgs e)
+        private void informacoesMesa(object sender, EventArgs e)
         {
             Mesas selecionada = (Mesas)comboBoxNumMesa.SelectedItem;
+            comboBoxStatus.Text = selecionada.Statusmesa;
+            comboBoxStatusPedido.Text = selecionada.Statuspedido;
             textBoxObservacao.Text = selecionada.Observacao;
-            comboBoxStatus.Text = selecionada.Status;
         }
 
         private void voltar(object sender, EventArgs e)
@@ -35,10 +35,8 @@ namespace SA.Views
             this.Visible = false;
         }
 
-        private void carregarInformacoes()
+        private void carregarInformacoesMesa()
         {
-            Mesas mesaSelecionada = (Mesas)comboBoxNumMesa.SelectedItem;
-
             using (var context = new churrascariaContext())
             {
                 var mesas = from m in context.Mesas
@@ -51,16 +49,13 @@ namespace SA.Views
         private void editar(object sender, EventArgs e)
         {
             Mesas selecionada = (Mesas)comboBoxNumMesa.SelectedItem;
-            selecionada.Status = comboBoxStatus.Text;
+            selecionada.Statusmesa = comboBoxStatus.Text;
+            selecionada.Statuspedido = comboBoxStatusPedido.Text;
             selecionada.Observacao = textBoxObservacao.Text;
-
-            Pedidos selecionado = (Pedidos)comboBoxStatusPedido.SelectedItem;
-            selecionado.Status = comboBoxStatusPedido.Text;
 
             using (var context = new churrascariaContext())
             {
                 context.Update(selecionada);
-                context.Update(selecionado);
                 context.SaveChanges();
             }
         }
