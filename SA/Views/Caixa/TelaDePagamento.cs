@@ -23,8 +23,8 @@ namespace SA.Views
 
         private void mostrarId(object sender, DataGridViewCellEventArgs e)
         {
-            Pedidos selecionado = (Pedidos)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
-            textBoxId.Text = selecionado.Id.ToString();
+            Itenspedido selecionado = (Itenspedido)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
+            textBoxId.Text = selecionado.IdPedido.ToString();
         }
 
         //Este método vai carregar as informações do dataGridView.
@@ -32,8 +32,8 @@ namespace SA.Views
         {
             using (var context = new churrascariaContext())
             {
-                var pedidos = from p in context.Pedidos
-                              select new Pedidos { Id = p.Id, Itenspedido = p.Itenspedido, Valor = p.Valor };
+                var pedidos = from p in context.Itenspedido
+                              select new Itenspedido { IdPedido = p.IdPedido, IdProduto = p.IdProduto, ValorProduto = p.ValorProduto, Quantidade = p.Quantidade, Total = p.Total};
 
                 dataGridViewPedidosPagamento.DataSource = pedidos.ToList();
                 dataGridViewPedidosPagamento.Columns[3].Visible = false;
@@ -43,7 +43,8 @@ namespace SA.Views
         //Este método vai ao ser clicado, realizar o logout, levando o funcionário de volta a tela de login.
         private void signOut(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            new TelaDeLogin().Show();
+            this.Visible = false;
         }
 
         //Esse método vai excluir o pedido do banco de dados ao se realizar o pagamento.
@@ -51,15 +52,15 @@ namespace SA.Views
         {
             if (MessageBox.Show("Deseja realizar o pagamento deste pedido?", "Pagamento de pedido", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Pedidos excluir = (Pedidos)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
-                excluir.Id = int.Parse(textBoxId.Text);
+                Itenspedido excluir = (Itenspedido)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
+                excluir.IdPedido = int.Parse(textBoxId.Text);
 
                 using (var context = new churrascariaContext())
                 {
                     context.Remove(excluir);
                     context.SaveChanges();
 
-                    var pedidos = from p in context.Pedidos
+                    var pedidos = from p in context.Itenspedido
                                   select p;
 
                     dataGridViewPedidosPagamento.DataSource = pedidos.ToList();

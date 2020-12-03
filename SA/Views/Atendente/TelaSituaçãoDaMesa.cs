@@ -37,14 +37,14 @@ namespace SA.Views
             {
                 var statusmesa = from e in context.Mesas
                                  where e.Id == mesa
-                                 select new Mesas {Status = e.Status };
+                                 select new Mesas {Statusmesa = e.Statusmesa };
                 statsMesaTxt.Text = statusmesa.ToString();
             }
             using (var context = new churrascariaContext())
             {
-                var statusped = from e in context.Pedidos
+                var statusped = from e in context.Mesas
                                  where e.Id == mesa
-                                 select new Mesas { Status = e.Status };
+                                 select new Mesas { Statuspedido = e.Statuspedido };
                 statsPedidoTxt.Text = statusped.ToString();
             }
             using (var context = new churrascariaContext())
