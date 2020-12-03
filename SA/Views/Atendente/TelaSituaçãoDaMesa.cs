@@ -22,6 +22,16 @@ namespace SA.Views
             nmrMesaTXT.Text = id;
             var IdMesa = int.Parse(id);
             carregarInformacoes(IdMesa);
+            buttonFundo.Enabled = false;
+
+            if (statsPedidoTxt.Text == "Esperando Atendente")
+            {
+                buttonFazerPedido.Visible = true;
+            }
+            else
+            {
+                buttonFazerPedido.Visible = false;
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -29,6 +39,7 @@ namespace SA.Views
             new TelaDePanoramaDasMesas().Show();
             this.Visible = false;
         }
+
         private void carregarInformacoes(int mesa)
         {
             int ID = mesa;
@@ -39,6 +50,7 @@ namespace SA.Views
                               select m.Observacao).Single();
                observacaoTxt.Text = obsmesa;
             }
+
             using (var context = new churrascariaContext())
             {
                 var sttsmesa = (from m in context.Mesas
@@ -46,6 +58,7 @@ namespace SA.Views
                                select m.Statusmesa).Single();
                 statsMesaTxt.Text = sttsmesa;
             }
+
             using (var context = new churrascariaContext())
             {
                 var sttspedido = (from m in context.Mesas

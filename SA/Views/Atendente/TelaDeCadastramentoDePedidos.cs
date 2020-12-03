@@ -71,18 +71,18 @@ namespace SA.Views
                 Datapedido = DateTime.Now
             };
 
-            using (var context = new churrascariaContext())
+            using (var contexto = new churrascariaContext())
             {
-                context.Pedidos.Add(novo);
-                context.SaveChanges();
+                contexto.Pedidos.Add(novo);
+                contexto.SaveChanges();
 
                 itens.ForEach(i =>
                 {
                     i.IdPedido = novo.Id;
-                    context.Itenspedido.Add(i);
+                    contexto.Itenspedido.Add(i);
                 });
 
-                context.SaveChanges();
+                contexto.SaveChanges();
 
                 new TelaDePanoramaDasMesas().Show();
                 this.Visible = false;
