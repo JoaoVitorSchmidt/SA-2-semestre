@@ -17,8 +17,11 @@ namespace SA.Models
 
         public virtual DbSet<Cadastro> Cadastro { get; set; }
         public virtual DbSet<Estoque> Estoque { get; set; }
+        public virtual DbSet<Itensdto> Itensdto { get; set; }
+        public virtual DbSet<Itenspedido> Itenspedido { get; set; }
         public virtual DbSet<Mesas> Mesas { get; set; }
         public virtual DbSet<Pedidos> Pedidos { get; set; }
+        public virtual DbSet<Produtos> Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -143,6 +146,45 @@ namespace SA.Models
                     .HasColumnType("decimal(10,2)");
             });
 
+            modelBuilder.Entity<Itensdto>(entity =>
+            {
+                entity.HasKey(e => e.Quantidade)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("itensdto");
+
+                entity.Property(e => e.Quantidade)
+                    .HasColumnName("quantidade")
+                    .HasColumnType("int(2)")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.Nome)
+                    .HasColumnName("nome")
+                    .HasColumnType("varchar(30)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
+            });
+
+            modelBuilder.Entity<Itenspedido>(entity =>
+            {
+                entity.HasKey(e => e.IdPedido)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("itenspedido");
+
+                entity.Property(e => e.IdPedido)
+                    .HasColumnType("int(2)")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.IdProduto).HasColumnType("int(2)");
+
+                entity.Property(e => e.Quantidade).HasColumnType("int(2)");
+
+                entity.Property(e => e.Total).HasColumnType("decimal(10,2)");
+
+                entity.Property(e => e.ValorProduto).HasColumnType("decimal(10,2)");
+            });
+
             modelBuilder.Entity<Mesas>(entity =>
             {
                 entity.ToTable("mesas");
@@ -184,15 +226,24 @@ namespace SA.Models
                     .HasColumnName("ID")
                     .HasColumnType("int(2)");
 
-                entity.Property(e => e.Itenspedido)
-                    .HasColumnName("ITENSPEDIDO")
-                    .HasColumnType("varchar(100)")
+                entity.Property(e => e.Datapedido)
+                    .HasColumnName("DATAPEDIDO")
+                    .HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<Produtos>(entity =>
+            {
+                entity.ToTable("produtos");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasColumnType("int(2)");
+
+                entity.Property(e => e.Nome)
+                    .HasColumnName("NOME")
+                    .HasColumnType("varchar(50)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
-
-                entity.Property(e => e.Numeromesa)
-                    .HasColumnName("NUMEROMESA")
-                    .HasColumnType("int(2)");
 
                 entity.Property(e => e.Valor)
                     .HasColumnName("VALOR")

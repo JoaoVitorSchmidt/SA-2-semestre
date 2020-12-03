@@ -6,71 +6,86 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace SA.Views
 {
     public partial class TelaDeCadastramentoDePedidos : Form
     {
+        List<Itenspedido> itens = new List<Itenspedido>();
         public TelaDeCadastramentoDePedidos()
         {
             InitializeComponent();
-            buttonLinha1.Enabled = false;
-            buttonFecharPedido.Click += bebidasSelecionadas;
-            buttonEspClassico.Click += EspetoClassico;
-            buttonEspEspecial.Click += EspetoEspecial;
+            carregarBebidas();
+            buttonFundo.Enabled = false;
+            buttonFecharPedido.Click += fecharPedido;
+            buttonAddAoPedido.Click += adiocionarAoPedido;
         }
 
-        private void EspetoEspecial(object sender, EventArgs e)
+        private void adiocionarAoPedido(object sender, EventArgs e)
         {
-            Pedidos p = new Pedidos();
-            p.Valor = 50;
-            p.Itenspedido = "Espeto Corrido Especial";
-
-            Mesas mes = new Mesas();
-            mes.Statuspedido = "Já feito";
-
-            using (var context = new churrascariaContext())
+            Produtos selecionado = (Produtos)comboBoxProdutos.SelectedItem;
+            itens.Add(new Itenspedido()
             {
-            context.Pedidos.Add(p);
-            context.Mesas.Add(mes);
-            context.SaveChanges();
-            }
-        }
+                IdProduto = selecionado.Id,
+                Quantidade = int.Parse(textBoxQuant.Text),
+                ValorProduto = selecionado.Valor
+            });
 
-        private void EspetoClassico(object sender, EventArgs e)
-        {
-            Pedidos ped = new Pedidos();
-            ped.Valor = 35;
-            ped.Itenspedido = "Espeto Corrido Clássico";
-
-            Mesas mes = new Mesas();
-            mes.Statuspedido = "Já feito";
-
-            using (var context = new churrascariaContext())
+            List<Itensdto> itensPedido = new List<Itensdto>();
+            itens.ForEach(i =>
             {
-            context.Pedidos.Add(ped);
-            context.Mesas.Add(mes);
-            context.SaveChanges();
-            }
-        }
-        private void bebidasSelecionadas(object sender, EventArgs e)
-        {
-
-            foreach (var item in checkedListBoxBebidas.CheckedItems)
-            {
-                Pedidos bebidas = new Pedidos();
-                bebidas.Itenspedido = bebidas.Itenspedido + checkedListBoxBebidas.CheckedItems.ToString() + ", ";
-
-                if (checkedListBoxBebidas.CheckedItems.ToString() == "Água Mineral s/gás | R$ 4,00")
-                {
-                    bebidas.Valor = bebidas.Valor + 4;
-                }
-
                 using (var context = new churrascariaContext())
                 {
-                    context.Pedidos.Add(bebidas);
-                    context.SaveChanges();
+                    var item = from prod in context.Produtos
+                               where prod.Id == i.IdProduto
+                               select new Itensdto { Nome = prod.Nome, Quantidade = int.Parse(i.Quantidade.ToString()) };
+
+                    itensPedido.Add((Itensdto)item.SingleOrDefault());
                 }
+            });
+
+            dataGridViewProdutosPedido.DataSource = itensPedido;
+        }
+
+        private void carregarBebidas()
+        {
+            using (var context = new churrascariaContext())
+            {
+                var produtos = from prod in context.Produtos
+                               select new Produtos
+                               {
+                                   Id = prod.Id,
+                                   Nome = prod.Nome,
+                                   Valor = prod.Valor
+                               };
+
+                comboBoxProdutos.DataSource = produtos.ToList();
+            }
+        }
+
+        private void fecharPedido(object sender, EventArgs e)
+        {
+            Pedidos novo = new Pedidos()
+            {
+                Datapedido = DateTime.Now
+            };
+
+            using (var context = new churrascariaContext())
+            {
+                context.Pedidos.Add(novo);
+                context.SaveChanges();
+
+                itens.ForEach(i =>
+                {
+                    i.IdPedido = novo.Id;
+                    context.Itenspedido.Add(i);
+                });
+
+                context.SaveChanges();
+
+                new TelaDePanoramaDasMesas().Show();
+                this.Visible = false;
             }
         }
     }

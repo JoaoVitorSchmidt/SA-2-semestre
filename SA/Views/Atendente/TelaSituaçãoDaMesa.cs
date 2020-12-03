@@ -39,5 +39,32 @@ namespace SA.Views
             new TelaDePanoramaDasMesas().Show();
             this.Visible = false;
         }
+<<<<<<< HEAD
+=======
+        private void carregarInformacoes(int mesa)
+        {
+            using (var context = new churrascariaContext())
+            {
+                var statusmesa = from e in context.Mesas
+                                 where e.Id == mesa
+                                 select new Mesas {Statusmesa = e.Statusmesa };
+                statsMesaTxt.Text = statusmesa.ToString();
+            }
+            using (var context = new churrascariaContext())
+            {
+                var statusped = from e in context.Mesas
+                                 where e.Id == mesa
+                                 select new Mesas { Statuspedido = e.Statuspedido };
+                statsPedidoTxt.Text = statusped.ToString();
+            }
+            using (var context = new churrascariaContext())
+            {
+                var obsmesa = from e in context.Mesas
+                                 where e.Id == mesa
+                                 select new Mesas { Observacao = e.Observacao };
+                observacaoTxt.Text = obsmesa.ToString();
+            }
+        }       
+>>>>>>> 7feaeaa307ec36199ca005d18561f2093fd6719f
     }
 }
