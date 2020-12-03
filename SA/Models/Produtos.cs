@@ -12,5 +12,6 @@ namespace SA.Models
         {
             return $"{Id} - {Nome}, {Valor}";
         }
+
     }
 }
