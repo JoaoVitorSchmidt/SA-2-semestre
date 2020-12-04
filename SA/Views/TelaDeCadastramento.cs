@@ -15,6 +15,13 @@ namespace SA.Views
         {
             InitializeComponent();
             buttonSalvarCadastro.Click += salvar;
+            buttonVoltar.Click += ButtonVoltar_Click;
+        }
+
+        private void ButtonVoltar_Click(object sender, EventArgs e)
+        {
+            new TelaDeLogin().Show();
+            this.Visible = false;
         }
 
         //Esse metódo vai salvar as informações cadastradas no banco de dados.

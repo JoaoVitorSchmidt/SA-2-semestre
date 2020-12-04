@@ -55,9 +55,10 @@
             this.labelSenha2 = new System.Windows.Forms.Label();
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.comboBoxUF = new System.Windows.Forms.ComboBox();
-            this.buttonSalvarCadastro = new System.Windows.Forms.Button();
             this.comboBoxProfissao2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonSalvarCadastro = new System.Windows.Forms.Button();
+            this.buttonVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelDadosPessoais
@@ -352,18 +353,6 @@
             this.comboBoxUF.Size = new System.Drawing.Size(121, 23);
             this.comboBoxUF.TabIndex = 4;
             // 
-            // buttonSalvarCadastro
-            // 
-            this.buttonSalvarCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSalvarCadastro.BackgroundImage")));
-            this.buttonSalvarCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonSalvarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvarCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonSalvarCadastro.Location = new System.Drawing.Point(508, 244);
-            this.buttonSalvarCadastro.Name = "buttonSalvarCadastro";
-            this.buttonSalvarCadastro.Size = new System.Drawing.Size(154, 147);
-            this.buttonSalvarCadastro.TabIndex = 5;
-            this.buttonSalvarCadastro.UseVisualStyleBackColor = true;
-            // 
             // comboBoxProfissao2
             // 
             this.comboBoxProfissao2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
@@ -390,15 +379,38 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Profissão";
             // 
+            // buttonSalvarCadastro
+            // 
+            this.buttonSalvarCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonSalvarCadastro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSalvarCadastro.Location = new System.Drawing.Point(496, 244);
+            this.buttonSalvarCadastro.Name = "buttonSalvarCadastro";
+            this.buttonSalvarCadastro.Size = new System.Drawing.Size(146, 45);
+            this.buttonSalvarCadastro.TabIndex = 7;
+            this.buttonSalvarCadastro.Text = "Salvar";
+            this.buttonSalvarCadastro.UseVisualStyleBackColor = false;
+            // 
+            // buttonVoltar
+            // 
+            this.buttonVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonVoltar.Location = new System.Drawing.Point(496, 346);
+            this.buttonVoltar.Name = "buttonVoltar";
+            this.buttonVoltar.Size = new System.Drawing.Size(146, 45);
+            this.buttonVoltar.TabIndex = 8;
+            this.buttonVoltar.Text = "Voltar";
+            this.buttonVoltar.UseVisualStyleBackColor = false;
+            // 
             // TelaDeCadastramentoFuncionários
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.buttonVoltar);
+            this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxProfissao2);
-            this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
             this.Controls.Add(this.labelSenha2);
@@ -462,8 +474,9 @@
         private System.Windows.Forms.Label labelSenha2;
         private System.Windows.Forms.TextBox textBoxSenha2;
         private System.Windows.Forms.ComboBox comboBoxUF;
-        private System.Windows.Forms.Button buttonSalvarCadastro;
         private System.Windows.Forms.ComboBox comboBoxProfissao2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonSalvarCadastro;
+        private System.Windows.Forms.Button buttonVoltar;
     }
 }
