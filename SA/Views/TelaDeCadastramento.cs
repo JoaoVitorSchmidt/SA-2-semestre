@@ -13,6 +13,7 @@ namespace SA.Views
     {
         public TelaDeCadastramentoFuncionários()
         {
+            //Botões da Tela de Cadastramento
             InitializeComponent();
             buttonSalvarCadastro.Click += salvar;
             buttonVoltar.Click += ButtonVoltar_Click;
@@ -20,6 +21,7 @@ namespace SA.Views
 
         private void ButtonVoltar_Click(object sender, EventArgs e)
         {
+            //Voltando para a tela de início
             new TelaDeLogin().Show();
             this.Visible = false;
         }
@@ -27,6 +29,7 @@ namespace SA.Views
         //Esse metódo vai salvar as informações cadastradas no banco de dados.
         private void salvar(object sender, EventArgs e)
         {
+            //Salvando as informações das variáveis
             Cadastro cad = new Cadastro();
             cad.Nome = textBoxNome2.Text;
             cad.Senha = textBoxSenha2.Text;
