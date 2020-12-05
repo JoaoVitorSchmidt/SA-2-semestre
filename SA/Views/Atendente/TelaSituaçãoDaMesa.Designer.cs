@@ -173,7 +173,6 @@
             this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // buttonFazerPedido
             // 
@@ -186,7 +185,6 @@
             this.buttonFazerPedido.TabIndex = 12;
             this.buttonFazerPedido.Text = "Fazer Pedido";
             this.buttonFazerPedido.UseVisualStyleBackColor = false;
-            this.buttonFazerPedido.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Situação_da_Mesa
             // 

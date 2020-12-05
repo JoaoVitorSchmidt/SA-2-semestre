@@ -21,6 +21,8 @@ namespace SA.Views
             buttonVoltar.Click += voltar;
             comboBoxNumMesa.TextChanged += informacoesMesa;
         }
+
+        //Esse método carrega as demais informações nos outros controles, ao se mudar o texto da comboBox numMesa.
         private void informacoesMesa(object sender, EventArgs e)
         {
             Mesas selecionada = (Mesas)comboBoxNumMesa.SelectedItem;
@@ -29,12 +31,14 @@ namespace SA.Views
             textBoxObservacao.Text = selecionada.Observacao;
         }
 
+        //Esse método, ao o botão voltar for clicado vai retornar o usuário a tela de panorama de mesas.
         private void voltar(object sender, EventArgs e)
         {
             new TelaDePanoramaDasMesas().Show();
             this.Visible = false;
         }
 
+        //Esse método vai carregar as informações na comboBox numMesa.
         private void carregarInformacoesMesa()
         {
             using (var context = new churrascariaContext())
@@ -46,6 +50,7 @@ namespace SA.Views
             }
         }
 
+        //Esse método vai ao o botão editar ser clicado, editar as informações dos controles.
         private void editar(object sender, EventArgs e)
         {
             Mesas selecionada = (Mesas)comboBoxNumMesa.SelectedItem;
@@ -58,6 +63,8 @@ namespace SA.Views
                 context.Update(selecionada);
                 context.SaveChanges();
             }
+
+            MessageBox.Show("Editado com Sucesso!");
         }
     }
 }

@@ -41,8 +41,8 @@ namespace SA.Views.Cozinheiro
             {
                 context.Estoque.Add(es);
                 context.SaveChanges();
-                MessageBox.Show("Adicionado com Sucesso!");
             }
+            MessageBox.Show("Adicionado com Sucesso!");
         }
 
         //Metódo para mostrar as informações nas textBoxs, ao clicar em um certo registro.
@@ -67,6 +67,7 @@ namespace SA.Views.Cozinheiro
                 context.Update(editar);
                 context.SaveChanges();
             }
+            MessageBox.Show("Editado com Sucesso!");
         }
 
         //Metódo para carregar as infomações do banco de dados no dataGridView.

@@ -39,6 +39,7 @@
             this.labelProdutos = new System.Windows.Forms.Label();
             this.labelQuant = new System.Windows.Forms.Label();
             this.labelVisaoGeral = new System.Windows.Forms.Label();
+            this.buttonVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProdutosPedido)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +47,7 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(9, 109);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(11, 132);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(213, 168);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -58,7 +59,7 @@
             this.buttonFecharPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.buttonFecharPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFecharPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonFecharPedido.Location = new System.Drawing.Point(445, 168);
+            this.buttonFecharPedido.Location = new System.Drawing.Point(410, 151);
             this.buttonFecharPedido.Name = "buttonFecharPedido";
             this.buttonFecharPedido.Size = new System.Drawing.Size(129, 41);
             this.buttonFecharPedido.TabIndex = 2;
@@ -71,19 +72,19 @@
             this.buttonFundo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFundo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFundo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.buttonFundo.Location = new System.Drawing.Point(225, 24);
+            this.buttonFundo.Location = new System.Drawing.Point(230, 12);
             this.buttonFundo.Name = "buttonFundo";
-            this.buttonFundo.Size = new System.Drawing.Size(375, 430);
+            this.buttonFundo.Size = new System.Drawing.Size(436, 427);
             this.buttonFundo.TabIndex = 32;
             this.buttonFundo.UseVisualStyleBackColor = false;
             // 
             // dataGridViewProdutosPedido
             // 
             this.dataGridViewProdutosPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProdutosPedido.Location = new System.Drawing.Point(235, 260);
+            this.dataGridViewProdutosPedido.Location = new System.Drawing.Point(237, 241);
             this.dataGridViewProdutosPedido.Name = "dataGridViewProdutosPedido";
             this.dataGridViewProdutosPedido.RowTemplate.Height = 25;
-            this.dataGridViewProdutosPedido.Size = new System.Drawing.Size(339, 182);
+            this.dataGridViewProdutosPedido.Size = new System.Drawing.Size(409, 182);
             this.dataGridViewProdutosPedido.TabIndex = 34;
             // 
             // buttonAddAoPedido
@@ -91,7 +92,7 @@
             this.buttonAddAoPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.buttonAddAoPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonAddAoPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonAddAoPedido.Location = new System.Drawing.Point(235, 168);
+            this.buttonAddAoPedido.Location = new System.Drawing.Point(237, 151);
             this.buttonAddAoPedido.Name = "buttonAddAoPedido";
             this.buttonAddAoPedido.Size = new System.Drawing.Size(157, 41);
             this.buttonAddAoPedido.TabIndex = 35;
@@ -100,7 +101,7 @@
             // 
             // textBoxQuant
             // 
-            this.textBoxQuant.Location = new System.Drawing.Point(235, 124);
+            this.textBoxQuant.Location = new System.Drawing.Point(237, 105);
             this.textBoxQuant.Name = "textBoxQuant";
             this.textBoxQuant.Size = new System.Drawing.Size(121, 23);
             this.textBoxQuant.TabIndex = 36;
@@ -108,9 +109,9 @@
             // comboBoxProdutos
             // 
             this.comboBoxProdutos.FormattingEnabled = true;
-            this.comboBoxProdutos.Location = new System.Drawing.Point(235, 66);
+            this.comboBoxProdutos.Location = new System.Drawing.Point(237, 47);
             this.comboBoxProdutos.Name = "comboBoxProdutos";
-            this.comboBoxProdutos.Size = new System.Drawing.Size(348, 23);
+            this.comboBoxProdutos.Size = new System.Drawing.Size(409, 23);
             this.comboBoxProdutos.TabIndex = 38;
             // 
             // labelProdutos
@@ -119,7 +120,7 @@
             this.labelProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
             this.labelProdutos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.labelProdutos.Location = new System.Drawing.Point(235, 42);
+            this.labelProdutos.Location = new System.Drawing.Point(237, 23);
             this.labelProdutos.Name = "labelProdutos";
             this.labelProdutos.Size = new System.Drawing.Size(73, 21);
             this.labelProdutos.TabIndex = 39;
@@ -131,7 +132,7 @@
             this.labelQuant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
             this.labelQuant.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelQuant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.labelQuant.Location = new System.Drawing.Point(235, 100);
+            this.labelQuant.Location = new System.Drawing.Point(237, 81);
             this.labelQuant.Name = "labelQuant";
             this.labelQuant.Size = new System.Drawing.Size(91, 21);
             this.labelQuant.TabIndex = 40;
@@ -143,18 +144,31 @@
             this.labelVisaoGeral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
             this.labelVisaoGeral.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelVisaoGeral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.labelVisaoGeral.Location = new System.Drawing.Point(235, 229);
+            this.labelVisaoGeral.Location = new System.Drawing.Point(237, 210);
             this.labelVisaoGeral.Name = "labelVisaoGeral";
             this.labelVisaoGeral.Size = new System.Drawing.Size(162, 21);
             this.labelVisaoGeral.TabIndex = 41;
             this.labelVisaoGeral.Text = "Visão Geral do Pedido";
+            // 
+            // buttonVoltar
+            // 
+            this.buttonVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonVoltar.Location = new System.Drawing.Point(560, 151);
+            this.buttonVoltar.Name = "buttonVoltar";
+            this.buttonVoltar.Size = new System.Drawing.Size(86, 41);
+            this.buttonVoltar.TabIndex = 42;
+            this.buttonVoltar.Text = "Voltar";
+            this.buttonVoltar.UseVisualStyleBackColor = false;
             // 
             // TelaDeCadastramentoDePedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(615, 470);
+            this.ClientSize = new System.Drawing.Size(678, 446);
+            this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.labelVisaoGeral);
             this.Controls.Add(this.labelQuant);
             this.Controls.Add(this.labelProdutos);
@@ -186,5 +200,6 @@
         private System.Windows.Forms.Label labelProdutos;
         private System.Windows.Forms.Label labelQuant;
         private System.Windows.Forms.Label labelVisaoGeral;
+        private System.Windows.Forms.Button buttonVoltar;
     }
 }

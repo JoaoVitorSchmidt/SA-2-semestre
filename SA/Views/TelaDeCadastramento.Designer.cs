@@ -55,7 +55,7 @@
             this.labelSenha2 = new System.Windows.Forms.Label();
             this.textBoxSenha2 = new System.Windows.Forms.TextBox();
             this.comboBoxUF = new System.Windows.Forms.ComboBox();
-            this.comboBoxProfissao2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxProfissao = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonSalvarCadastro = new System.Windows.Forms.Button();
             this.buttonVoltar = new System.Windows.Forms.Button();
@@ -353,20 +353,19 @@
             this.comboBoxUF.Size = new System.Drawing.Size(121, 23);
             this.comboBoxUF.TabIndex = 4;
             // 
-            // comboBoxProfissao2
+            // comboBoxProfissao
             // 
-            this.comboBoxProfissao2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
-            this.comboBoxProfissao2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.comboBoxProfissao2.FormattingEnabled = true;
-            this.comboBoxProfissao2.Items.AddRange(new object[] {
+            this.comboBoxProfissao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.comboBoxProfissao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.comboBoxProfissao.FormattingEnabled = true;
+            this.comboBoxProfissao.Items.AddRange(new object[] {
             "Cozinheiro(a)",
-            "Gerente",
             "Atendente",
             "Caixa"});
-            this.comboBoxProfissao2.Location = new System.Drawing.Point(496, 65);
-            this.comboBoxProfissao2.Name = "comboBoxProfissao2";
-            this.comboBoxProfissao2.Size = new System.Drawing.Size(146, 23);
-            this.comboBoxProfissao2.TabIndex = 6;
+            this.comboBoxProfissao.Location = new System.Drawing.Point(496, 65);
+            this.comboBoxProfissao.Name = "comboBoxProfissao";
+            this.comboBoxProfissao.Size = new System.Drawing.Size(146, 23);
+            this.comboBoxProfissao.TabIndex = 6;
             // 
             // label1
             // 
@@ -410,7 +409,7 @@
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonSalvarCadastro);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBoxProfissao2);
+            this.Controls.Add(this.comboBoxProfissao);
             this.Controls.Add(this.comboBoxUF);
             this.Controls.Add(this.textBoxSenha2);
             this.Controls.Add(this.labelSenha2);
@@ -478,5 +477,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonSalvarCadastro;
         private System.Windows.Forms.Button buttonVoltar;
+        private System.Windows.Forms.ComboBox comboBoxProfissao;
     }
 }

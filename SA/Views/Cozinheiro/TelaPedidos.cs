@@ -36,7 +36,7 @@ namespace SA.Views.Cozinheiro
         {
             using (var context = new churrascariaContext())
             {
-                var pedidos = from p in context.Pedidos
+                var pedidos = from p in context.Itenspedido
                               select p;
 
                 dataGridViewPedidos.DataSource = pedidos.ToList();

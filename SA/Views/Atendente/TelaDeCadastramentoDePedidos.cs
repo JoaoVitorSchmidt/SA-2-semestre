@@ -20,6 +20,13 @@ namespace SA.Views
             buttonFundo.Enabled = false;
             buttonFecharPedido.Click += fecharPedido;
             buttonAddAoPedido.Click += adiocionarAoPedido;
+            buttonVoltar.Click += voltar;
+        }
+
+        private void voltar(object sender, EventArgs e)
+        {
+            new TelaDePanoramaDasMesas().Show();
+            this.Visible = false;
         }
 
         private void adiocionarAoPedido(object sender, EventArgs e)
@@ -71,18 +78,20 @@ namespace SA.Views
                 Datapedido = DateTime.Now
             };
 
-            using (var contexto = new churrascariaContext())
+            using (var context = new churrascariaContext())
             {
-                contexto.Pedidos.Add(novo);
-                contexto.SaveChanges();
+                context.Pedidos.Add(novo);
+                context.SaveChanges();
 
                 itens.ForEach(i =>
                 {
                     i.IdPedido = novo.Id;
-                    contexto.Itenspedido.Add(i);
+                    context.Itenspedido.Add(i);
                 });
 
-                contexto.SaveChanges();
+                context.SaveChanges();
+
+                MessageBox.Show("Pedido efetuado com sucesso!");
 
                 new TelaDePanoramaDasMesas().Show();
                 this.Visible = false;

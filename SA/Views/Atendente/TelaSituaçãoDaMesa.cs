@@ -23,6 +23,7 @@ namespace SA.Views
             var IdMesa = int.Parse(id);
             carregarInformacoes(IdMesa);
             buttonFundo.Enabled = false;
+            btnVoltar.Click += voltar;
 
             if (statsPedidoTxt.Text == "Esperando Atendente")
             {
@@ -32,11 +33,18 @@ namespace SA.Views
             {
                 buttonFazerPedido.Visible = false;
             }
+            buttonFazerPedido.Click += fazerPedido;
         }
 
-        private void btnVoltar_Click(object sender, EventArgs e)
+        private void voltar(object sender, EventArgs e)
         {
             new TelaDePanoramaDasMesas().Show();
+            this.Visible = false;
+        }
+
+        private void fazerPedido(object sender, EventArgs e)
+        {
+            new TelaDeCadastramentoDePedidos().Show();
             this.Visible = false;
         }
 
