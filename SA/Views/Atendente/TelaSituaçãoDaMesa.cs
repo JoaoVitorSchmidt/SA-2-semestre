@@ -36,18 +36,21 @@ namespace SA.Views
             buttonFazerPedido.Click += fazerPedido;
         }
 
+        //Esse método vai ao o botão voltar ser clicado, levar o usuário para a tela de panorama das mesas.
         private void voltar(object sender, EventArgs e)
         {
             new TelaDePanoramaDasMesas().Show();
             this.Visible = false;
         }
 
+        //Esse método vai ao o botão fazer pedido ser clicado, levar o usuário para a tela de cadastramento de pedidos.
         private void fazerPedido(object sender, EventArgs e)
         {
             new TelaDeCadastramentoDePedidos().Show();
             this.Visible = false;
         }
 
+        //Esse método carrega as informações do banco de dados nos devidos labels.
         private void carregarInformacoes(int mesa)
         {
             int ID = mesa;

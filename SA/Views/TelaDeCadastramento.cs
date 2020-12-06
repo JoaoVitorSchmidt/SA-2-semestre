@@ -26,7 +26,7 @@ namespace SA.Views
             this.Visible = false;
         }
 
-        //Esse metódo vai salvar as informações cadastradas no banco de dados.
+        //Esse método vai salvar as informações cadastradas no banco de dados.
         private void salvar(object sender, EventArgs e)
         {
             //Salvando as informações das variáveis

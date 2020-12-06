@@ -21,6 +21,7 @@ namespace SA.Views
             buttonSignOut.Click += signOut;
         }
 
+        //Esse método carrega a id do pedido na text box id, pra que se possa realizar o pagamento.
         private void mostrarId(object sender, DataGridViewCellEventArgs e)
         {
             Itenspedido selecionado = (Itenspedido)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
@@ -36,7 +37,6 @@ namespace SA.Views
                               select new Itenspedido { IdPedido = p.IdPedido, IdProduto = p.IdProduto, ValorProduto = p.ValorProduto, Quantidade = p.Quantidade, Total = p.Total};
 
                 dataGridViewPedidosPagamento.DataSource = pedidos.ToList();
-                dataGridViewPedidosPagamento.Columns[3].Visible = false;
             }
         }
 

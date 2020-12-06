@@ -29,7 +29,7 @@ namespace SA.Views.Cozinheiro
             this.Visible = false;
         }
 
-        //Metódo para adicionar informações ao banco de dados, ao clicar o buttonAdicinar.
+        //método para adicionar informações ao banco de dados, ao clicar o buttonAdicinar.
         private void adicionar(object sender, EventArgs e)
         {
             Estoque es = new Estoque();
@@ -45,7 +45,7 @@ namespace SA.Views.Cozinheiro
             MessageBox.Show("Adicionado com Sucesso!");
         }
 
-        //Metódo para mostrar as informações nas textBoxs, ao clicar em um certo registro.
+        //método para mostrar as informações nas textBoxs, ao clicar em um certo registro.
         private void mostrarInformacoes(object sender, EventArgs e)
         {
             Estoque selecionado = (Estoque)dataGridViewEstoque.CurrentRow.DataBoundItem;
@@ -54,7 +54,7 @@ namespace SA.Views.Cozinheiro
             textBoxValorUnit.Text = selecionado.ValorKg.ToString();
         }
 
-        //Metódo para salvar as informações editadas.
+        //método para salvar as informações editadas.
         private void editar(object sender, EventArgs e)
         {
             Estoque editar = (Estoque)dataGridViewEstoque.CurrentRow.DataBoundItem;
@@ -70,7 +70,7 @@ namespace SA.Views.Cozinheiro
             MessageBox.Show("Editado com Sucesso!");
         }
 
-        //Metódo para carregar as infomações do banco de dados no dataGridView.
+        //método para carregar as infomações do banco de dados no dataGridView.
         private void carregarInformacoes()
         {
             using (var context = new churrascariaContext())

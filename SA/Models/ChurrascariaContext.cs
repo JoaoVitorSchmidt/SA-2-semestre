@@ -167,14 +167,13 @@ namespace SA.Models
 
             modelBuilder.Entity<Itenspedido>(entity =>
             {
-                entity.HasKey(e => e.IdPedido)
-                    .HasName("PRIMARY");
+                entity.HasKey(e => new { e.IdPedido, e.IdProduto })
+                    .HasName("PRIMARY")
+                    .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0 });
 
                 entity.ToTable("itenspedido");
 
-                entity.Property(e => e.IdPedido)
-                    .HasColumnType("int(2)")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.IdPedido).HasColumnType("int(2)");
 
                 entity.Property(e => e.IdProduto).HasColumnType("int(2)");
 

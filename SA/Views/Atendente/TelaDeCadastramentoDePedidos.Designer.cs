@@ -103,7 +103,7 @@
             // 
             this.textBoxQuant.Location = new System.Drawing.Point(237, 105);
             this.textBoxQuant.Name = "textBoxQuant";
-            this.textBoxQuant.Size = new System.Drawing.Size(121, 23);
+            this.textBoxQuant.Size = new System.Drawing.Size(157, 23);
             this.textBoxQuant.TabIndex = 36;
             // 
             // comboBoxProdutos

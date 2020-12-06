@@ -23,12 +23,14 @@ namespace SA.Views
             buttonVoltar.Click += voltar;
         }
 
+        //Esse método ao o botão voltar ser clicado, o mesmo vai retornar o usuário para a tela panorama de mesas.
         private void voltar(object sender, EventArgs e)
         {
             new TelaDePanoramaDasMesas().Show();
             this.Visible = false;
         }
 
+        //Esse método vai, ao o botão adicionar ser clicado, o mesmo vai adionar o produto ao datagridview, e ao pedido final.
         private void adiocionarAoPedido(object sender, EventArgs e)
         {
             Produtos selecionado = (Produtos)comboBoxProdutos.SelectedItem;
@@ -39,7 +41,7 @@ namespace SA.Views
                 ValorProduto = selecionado.Valor
             });
 
-            List<Itensdto> itensPedido = new List<Itensdto>();
+            List<dynamic> itensPedido = new List<dynamic>();
             itens.ForEach(i =>
             {
                 using (var context = new churrascariaContext())
@@ -55,6 +57,7 @@ namespace SA.Views
             dataGridViewProdutosPedido.DataSource = itensPedido;
         }
 
+        //Esse método vai carregar as informações na comboBox produtos.
         private void carregarBebidas()
         {
             using (var context = new churrascariaContext())
@@ -71,6 +74,7 @@ namespace SA.Views
             }
         }
 
+        //Esse método vai ao o botão fechar pedido ser clicado, adicionar as informações necessárias no banco de dados.
         private void fecharPedido(object sender, EventArgs e)
         {
             Pedidos novo = new Pedidos()
@@ -87,6 +91,10 @@ namespace SA.Views
                 {
                     i.IdPedido = novo.Id;
                     context.Itenspedido.Add(i);
+
+                    Produtos p = context.Find<Produtos>(i.IdProduto);
+
+                    context.Update(p);
                 });
 
                 context.SaveChanges();

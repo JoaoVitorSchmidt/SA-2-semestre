@@ -5,7 +5,6 @@ namespace SA.Models
 {
     public partial class Produtos
     {
-        //Variáveis dos Produtos
         public int Id { get; set; }
         public string Nome { get; set; }
         public decimal Valor { get; set; }
@@ -13,6 +12,5 @@ namespace SA.Models
         {
             return $"{Id} - {Nome}, {Valor}";
         }
-
     }
 }

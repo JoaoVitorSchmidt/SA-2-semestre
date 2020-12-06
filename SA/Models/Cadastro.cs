@@ -5,7 +5,6 @@ namespace SA.Models
 {
     public partial class Cadastro
     {
-        //Aqui declaramos as variáveis para a tela de cadastramento
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Senha { get; set; }
