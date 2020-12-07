@@ -228,6 +228,10 @@ namespace SA.Models
                 entity.Property(e => e.Datapedido)
                     .HasColumnName("DATAPEDIDO")
                     .HasColumnType("datetime");
+
+                entity.Property(e => e.Pago)
+                    .HasColumnType("bit(1)")
+                    .HasDefaultValueSql("b'0'");
             });
 
             modelBuilder.Entity<Produtos>(entity =>

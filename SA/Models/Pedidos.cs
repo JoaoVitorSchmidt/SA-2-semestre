@@ -7,5 +7,6 @@ namespace SA.Models
     {
         public int Id { get; set; }
         public DateTime Datapedido { get; set; }
+        public ulong? Pago { get; set; }
     }
 }

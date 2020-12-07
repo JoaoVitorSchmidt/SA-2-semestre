@@ -40,6 +40,7 @@
             this.labelQuantKg = new System.Windows.Forms.Label();
             this.dataGridViewEstoque = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             this.btnPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnPedidos.Location = new System.Drawing.Point(66, 404);
             this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(166, 29);
+            this.btnPedidos.Size = new System.Drawing.Size(149, 29);
             this.btnPedidos.TabIndex = 3;
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = false;
@@ -87,9 +88,9 @@
             this.buttonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.buttonEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonEditar.Location = new System.Drawing.Point(309, 404);
+            this.buttonEditar.Location = new System.Drawing.Point(240, 404);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(166, 29);
+            this.buttonEditar.Size = new System.Drawing.Size(149, 29);
             this.buttonEditar.TabIndex = 3;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = false;
@@ -99,9 +100,9 @@
             this.buttonAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
             this.buttonAdicionar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonAdicionar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
-            this.buttonAdicionar.Location = new System.Drawing.Point(568, 404);
+            this.buttonAdicionar.Location = new System.Drawing.Point(585, 404);
             this.buttonAdicionar.Name = "buttonAdicionar";
-            this.buttonAdicionar.Size = new System.Drawing.Size(166, 29);
+            this.buttonAdicionar.Size = new System.Drawing.Size(149, 29);
             this.buttonAdicionar.TabIndex = 3;
             this.buttonAdicionar.Text = "Adicionar";
             this.buttonAdicionar.UseVisualStyleBackColor = false;
@@ -164,12 +165,25 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Estoque";
             // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(244)))), ((int)(((byte)(222)))));
+            this.buttonExcluir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonExcluir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonExcluir.Location = new System.Drawing.Point(417, 404);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(149, 29);
+            this.buttonExcluir.TabIndex = 7;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = false;
+            // 
             // TelaEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewEstoque);
             this.Controls.Add(this.labelQuantKg);
@@ -202,5 +216,6 @@
         private System.Windows.Forms.Label labelQuantKg;
         private System.Windows.Forms.DataGridView dataGridViewEstoque;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonExcluir;
     }
 }

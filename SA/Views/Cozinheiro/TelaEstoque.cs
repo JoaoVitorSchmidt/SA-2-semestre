@@ -20,6 +20,28 @@ namespace SA.Views.Cozinheiro
             buttonAdicionar.Click += adicionar;
             dataGridViewEstoque.CellClick += mostrarInformacoes;
             btnPedidos.Click += BtnPedidos_Click;
+            buttonExcluir.Click += excluir;
+        }
+
+        //Este método vai excluir o produto selecionado ao se clicar no botão excluir.
+        private void excluir(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja excluir este produto do estoque?", "Exclusão do Produto", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Estoque excluir = (Estoque)dataGridViewEstoque.CurrentRow.DataBoundItem;
+                excluir.Identificacao = textBoxIdentificacao.Text;
+
+                using (var context = new churrascariaContext())
+                {
+                    context.Remove(excluir);
+                    context.SaveChanges();
+
+                    var excluirEstoque = from ex in context.Estoque
+                                  select ex;
+
+                    dataGridViewEstoque.DataSource = excluirEstoque.ToList();
+                }
+            }
         }
 
         //Este método vai fazer com que ao se clicar no botão pedidos, o mesmo abra a tela de Pedidos.
@@ -41,8 +63,14 @@ namespace SA.Views.Cozinheiro
             {
                 context.Estoque.Add(es);
                 context.SaveChanges();
+
+                MessageBox.Show("Adicionado com Sucesso!");
+
+                var estoque = from est in context.Estoque
+                              select est;
+
+                dataGridViewEstoque.DataSource = estoque.ToList();
             }
-            MessageBox.Show("Adicionado com Sucesso!");
         }
 
         //método para mostrar as informações nas textBoxs, ao clicar em um certo registro.

@@ -24,8 +24,14 @@ namespace SA.Views
         //Esse método carrega a id do pedido na text box id, pra que se possa realizar o pagamento.
         private void mostrarId(object sender, DataGridViewCellEventArgs e)
         {
-            Itenspedido selecionado = (Itenspedido)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
-            textBoxId.Text = selecionado.IdPedido.ToString();
+            int idPedido = int.Parse(dataGridViewPedidosPagamento.CurrentRow.Cells[0].Value.ToString());
+
+            using (var context = new churrascariaContext())
+            {
+                Pedidos selecionado = context.Pedidos.Find(idPedido);
+                textBoxId.Text = selecionado.Id.ToString();
+            }
+
         }
 
         //Este método vai carregar as informações do dataGridView.
@@ -33,9 +39,10 @@ namespace SA.Views
         {
             using (var context = new churrascariaContext())
             {
-                var pedidos = from p in context.Itenspedido
-                              select new Itenspedido { IdPedido = p.IdPedido, IdProduto = p.IdProduto, ValorProduto = p.ValorProduto, Quantidade = p.Quantidade, Total = p.Total};
-
+                var pedidos = from p in context.Pedidos
+                              join ped in context.Itenspedido on p.Id equals ped.IdPedido
+                              select new { Pedido = ped.IdPedido,  Produtos = ped.IdProduto, Pago = p.Pago, ValorProduto = ped.ValorProduto, Quantidade = ped.Quantidade, Total = ped.Total };
+                
                 dataGridViewPedidosPagamento.DataSource = pedidos.ToList();
             }
         }
@@ -52,16 +59,19 @@ namespace SA.Views
         {
             if (MessageBox.Show("Deseja realizar o pagamento deste pedido?", "Pagamento de pedido", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Itenspedido excluir = (Itenspedido)dataGridViewPedidosPagamento.CurrentRow.DataBoundItem;
-                excluir.IdPedido = int.Parse(textBoxId.Text);
+                int idPedido = int.Parse(dataGridViewPedidosPagamento.CurrentRow.Cells[0].Value.ToString());
 
                 using (var context = new churrascariaContext())
                 {
-                    context.Remove(excluir);
+                    Pedidos pagar = context.Pedidos.Find(idPedido);
+                    pagar.Id = int.Parse(textBoxId.Text);
+                    pagar.Pago = 1;
+
                     context.SaveChanges();
 
-                    var pedidos = from p in context.Itenspedido
-                                  select p;
+                    var pedidos = from p in context.Pedidos
+                                  join ped in context.Itenspedido on p.Id equals ped.IdPedido
+                                  select new { Pedido = ped.IdPedido, Produtos = ped.IdProduto, Pago = p.Pago, ValorProduto = ped.ValorProduto, Quantidade = ped.Quantidade, Total = ped.Total };
 
                     dataGridViewPedidosPagamento.DataSource = pedidos.ToList();
                 }
